@@ -1,0 +1,73 @@
+{
+  "version": "0.1",
+  "statut": "PROTOTYPE — NON VALIDE SUR MATERIEL",
+  "imprimante": "Bambu Lab A1 mini",
+  "plateau_mm": [
+    180,
+    180,
+    180
+  ],
+  "L1_mm": 94.0,
+  "L2_mm": 76.0,
+  "axes": {
+    "base": "MG996R",
+    "epaule": "MG996R",
+    "coude": "MG996R",
+    "poignet_inclinaison": "MG90S",
+    "poignet_rotation": "MG90S",
+    "pince": "MG90S"
+  },
+  "servos_nominales": {
+    "MG996R": {
+      "name": "MG996R",
+      "l": 40.7,
+      "w": 19.7,
+      "depth": 36.8,
+      "off": 10.3,
+      "front": 8.0,
+      "ear": 47.5,
+      "ear_y": 5,
+      "mount_d": 3.3,
+      "plate": [
+        61,
+        30
+      ],
+      "plate_z": -13,
+      "back": -47,
+      "side_y": 32,
+      "br": 6.5,
+      "bore": 4.25,
+      "foot": -38,
+      "rise": 31,
+      "mass": 55
+    },
+    "MG90S": {
+      "name": "MG90S",
+      "l": 22.8,
+      "w": 12.2,
+      "depth": 23.0,
+      "off": 5.7,
+      "front": 5.5,
+      "ear": 27.8,
+      "ear_y": 0,
+      "mount_d": 2.3,
+      "plate": [
+        37,
+        21
+      ],
+      "plate_z": -9,
+      "back": -31,
+      "side_y": 24,
+      "br": 5,
+      "bore": 3.25,
+      "foot": -24,
+      "rise": 22,
+      "mass": 13.4
+    }
+  },
+  "charge_etudiee_g": 20.0,
+  "coques_epaisseur_mm": 2.2,
+  "reference_servo_vendeur": "A CONFIRMER",
+  "fixation_coques": "A FINALISER APRES ESSAI ARMATURE",
+  "compensation_epaule": "ANCRAGES PREVUS, RESSORT A DIMENSIONNER"
+}
