@@ -1,0 +1,35 @@
+{
+  "presentation": {
+    "angles_deg": [
+      0,
+      25,
+      45,
+      100,
+      0,
+      18
+    ],
+    "couples_statiques_kgf_cm": {
+      "upper": 2.529,
+      "forearm": 1.237,
+      "wrist": 0.114
+    },
+    "charge_g": 20.0
+  },
+  "bras_horizontal": {
+    "angles_deg": [
+      0,
+      90,
+      0,
+      0,
+      0,
+      0
+    ],
+    "couples_statiques_kgf_cm": {
+      "upper": 4.748,
+      "forearm": 1.688,
+      "wrist": 0.493
+    },
+    "charge_g": 20.0
+  },
+  "limites": "Masses PLA pleines calculees; pas de validation des engrenages, du fluage, des efforts de pince, de la temperature, des mouvements ou des servos reels. Un couple de blocage ne constitue pas un couple continu admissible."
+}
