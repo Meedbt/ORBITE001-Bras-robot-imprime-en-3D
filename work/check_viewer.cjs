@@ -1,0 +1,24 @@
+const {chromium}=require('C:/Users/mouha/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const fs=require('fs');
+(async()=>{
+ const browser=await chromium.launch({executablePath:'C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe',headless:true,args:['--disable-brave-update','--disable-dev-shm-usage','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+ const page=await browser.newPage({viewport:{width:1300,height:1000},deviceScaleFactor:1});const errors=[];page.on('pageerror',e=>errors.push(String(e)));
+ await page.goto('file:///'+process.cwd().replaceAll('\\','/')+'/apercu_3d.html');await page.waitForFunction(()=>window.orbiteReady||window.renderError,{timeout:30000});
+ await page.screenshot({path:'work/apercu-interface.png',fullPage:true});
+ const renderError=await page.evaluate(()=>window.renderError||null);if(renderError)throw Error(renderError);
+ await page.locator('#stage').screenshot({path:'apercu.png'});
+ await page.locator('#base-open').click();await page.locator('#stage').screenshot({path:'socle_electronique.png'});
+ const baseOpen=await page.evaluate(()=>({open:window.orbiteBaseOpen,visible:window.orbiteScene.all.filter(m=>m.visible).map(m=>m.userData.r.id)}));
+ if(!baseOpen.open||baseOpen.visible.length!==6)throw Error('Incorrect electronics view '+JSON.stringify(baseOpen));
+ await page.locator('#pose').click();
+ await page.locator('#explode').click();await page.screenshot({path:'work/apercu-eclate.png',fullPage:true});
+ const exploded=await page.evaluate(()=>window.orbiteExploded);
+ await page.locator('#pose').click();await page.locator('#shells').uncheck();await page.locator('#stage').screenshot({path:'work/apercu-structure.png'});
+ await page.locator('#shells').check();await page.locator('#joint-0').fill('30');const updated=await page.evaluate(()=>window.orbiteAngles[0]);
+ await page.setViewportSize({width:360,height:950});await page.screenshot({path:'work/apercu-mobile.png',fullPage:true});
+ const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth);
+ const result={errors,baseOpen,exploded,updated,mobileOverflow:overflow,meshes:await page.evaluate(()=>window.orbiteScene.all.length)};
+ fs.writeFileSync('verification_apercu.json',JSON.stringify(result,null,2));
+ if(errors.length||!exploded||updated!==30||overflow)throw Error(JSON.stringify(result));
+ console.log(JSON.stringify(result));await browser.close();
+})().catch(e=>{console.error(e);process.exit(1)});

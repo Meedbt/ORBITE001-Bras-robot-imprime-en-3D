@@ -1,5 +1,5 @@
 {
-  "version": "0.1",
+  "version": "0.2",
   "statut": "PROTOTYPE — NON VALIDE SUR MATERIEL",
   "imprimante": "Bambu Lab A1 mini",
   "plateau_mm": [
@@ -67,6 +67,42 @@
   },
   "charge_etudiee_g": 20.0,
   "coques_epaisseur_mm": 2.2,
+  "socle_electronique": {
+    "diametre_corps_mm": 140,
+    "hauteur_ajoutee_mm": 40.0,
+    "encombrement_pattes_mm": 166,
+    "UNO_PCB_mm": [
+      68.6,
+      53.4,
+      1.6
+    ],
+    "supports_carte_hauteur_mm": 6,
+    "passage_cables_S01_mm": [
+      14,
+      9
+    ],
+    "passage_cables_S01_xy_mm": [
+      -40,
+      -18
+    ],
+    "fenetre_USB_mm": [
+      30,
+      21
+    ],
+    "platine_mm": [
+      42,
+      25,
+      2.4
+    ],
+    "passage_cable_platine_mm": 8,
+    "zone_alimentation_mm": [
+      60,
+      22,
+      16
+    ],
+    "adaptateur_secteur": "EXTERNE",
+    "references_electroniques": "ENVELOPPES NOMINALES A VERIFIER AVEC COMPOSANTS ACHETES"
+  },
   "reference_servo_vendeur": "A CONFIRMER",
   "fixation_coques": "A FINALISER APRES ESSAI ARMATURE",
   "compensation_epaule": "ANCRAGES PREVUS, RESSORT A DIMENSIONNER"
