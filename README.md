@@ -1,4 +1,4 @@
-# ORBITE — Bras robot imprimé en 3D
+# ORBITE001 — Bras robot imprimé en 3D
 
 Projet personnel réalisé en complément d’un projet universitaire pour apprendre à concevoir, fabriquer et programmer un bras robot.
 
