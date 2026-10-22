@@ -158,8 +158,8 @@
     "designation": "Socle fixe et berceau du moteur de base",
     "groupe": "structure",
     "couleur": "white",
-    "volume_cm3": 121.046,
-    "masse_pleine_PLA_g": 150.1,
+    "volume_cm3": 120.439,
+    "masse_pleine_PLA_g": 149.34,
     "dimensions_impression_mm": [
       116.0,
       116.0,
@@ -366,6 +366,72 @@
     "ferme": true,
     "volume_positif": true,
     "owner": "finger_r",
+    "orientation_deg": [
+      90,
+      0,
+      0
+    ],
+    "composantes": 1
+  },
+  {
+    "id": "S11_boitier_electronique",
+    "designation": "Boîtier fixe inférieur et pattes de fixation",
+    "groupe": "structure",
+    "couleur": "white",
+    "volume_cm3": 73.647,
+    "masse_pleine_PLA_g": 91.32,
+    "dimensions_impression_mm": [
+      166.0,
+      166.0,
+      40.0
+    ],
+    "ferme": true,
+    "volume_positif": true,
+    "owner": "base",
+    "orientation_deg": [
+      180,
+      0,
+      0
+    ],
+    "composantes": 1
+  },
+  {
+    "id": "S12_fond_electronique",
+    "designation": "Fond démontable avec supports Uno et passages de colliers",
+    "groupe": "structure",
+    "couleur": "dark",
+    "volume_cm3": 46.822,
+    "masse_pleine_PLA_g": 58.06,
+    "dimensions_impression_mm": [
+      140.0,
+      140.0,
+      9.0
+    ],
+    "ferme": true,
+    "volume_positif": true,
+    "owner": "base",
+    "orientation_deg": [
+      0,
+      0,
+      0
+    ],
+    "composantes": 1
+  },
+  {
+    "id": "S13_platine_arriere",
+    "designation": "Platine amovible pour câble et futur interrupteur",
+    "groupe": "structure",
+    "couleur": "dark",
+    "volume_cm3": 2.33,
+    "masse_pleine_PLA_g": 2.89,
+    "dimensions_impression_mm": [
+      42.0,
+      25.0,
+      2.4
+    ],
+    "ferme": true,
+    "volume_positif": true,
+    "owner": "base",
     "orientation_deg": [
       90,
       0,

@@ -1,0 +1,18 @@
+{
+  "errors": [],
+  "baseOpen": {
+    "open": true,
+    "visible": [
+      "S12_fond_electronique",
+      "S13_platine_arriere",
+      "E01_Uno_circuit",
+      "E02_Uno_composants",
+      "E03_zone_alimentation",
+      "E04_fiche_USB"
+    ]
+  },
+  "exploded": true,
+  "updated": 30,
+  "mobileOverflow": false,
+  "meshes": 46
+}

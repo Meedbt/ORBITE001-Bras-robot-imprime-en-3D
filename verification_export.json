@@ -1,6 +1,6 @@
 {
   "statut": "PROTOTYPE NON VALIDE SUR MATERIEL",
-  "nombre_STL_individuels": 35,
+  "nombre_STL_individuels": 38,
   "anomalies": [],
   "simplification_geometrique_mm": 0.005,
   "interferences_volumiques_pose_initiale_superieures_a_0p5_mm3": [],
@@ -207,6 +207,42 @@
         19.784,
         44.496,
         6.0
+      ],
+      "compatible_volume_180_mm": true,
+      "ok": true
+    },
+    {
+      "piece": "S11_boitier_electronique",
+      "ferme_apres_relecture_STL": true,
+      "volume_positif": true,
+      "dimensions_mm": [
+        166.0,
+        166.0,
+        40.0
+      ],
+      "compatible_volume_180_mm": true,
+      "ok": true
+    },
+    {
+      "piece": "S12_fond_electronique",
+      "ferme_apres_relecture_STL": true,
+      "volume_positif": true,
+      "dimensions_mm": [
+        140.0,
+        140.0,
+        9.0
+      ],
+      "compatible_volume_180_mm": true,
+      "ok": true
+    },
+    {
+      "piece": "S13_platine_arriere",
+      "ferme_apres_relecture_STL": true,
+      "volume_positif": true,
+      "dimensions_mm": [
+        42.0,
+        25.0,
+        2.4
       ],
       "compatible_volume_180_mm": true,
       "ok": true

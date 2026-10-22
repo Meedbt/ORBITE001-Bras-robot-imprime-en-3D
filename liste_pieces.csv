@@ -6,7 +6,7 @@ G_MG90S_jeu_0p2;Gabarit MG90S, jeu 0.20 mm par côté;gabarits;white;37.0;21.0;3
 G_MG90S_jeu_0p35;Gabarit MG90S, jeu 0.35 mm par côté;gabarits;white;37.0;21.0;3.4;1.529
 G_MG90S_jeu_0p5;Gabarit MG90S, jeu 0.50 mm par côté;gabarits;white;37.0;21.0;3.4;1.493
 G_paliers_624_623;Gabarit logements 624ZZ et 623ZZ;gabarits;dark;50.0;25.0;6.2;6.339
-S01_socle;Socle fixe et berceau du moteur de base;structure;white;116.0;116.0;56.0;121.046
+S01_socle;Socle fixe et berceau du moteur de base;structure;white;116.0;116.0;56.0;120.439
 S02_support_palier_base;Support démontable du roulement 608ZZ;structure;dark;100.0;100.0;11.0;31.991
 S03_entraineur_base;Entraîneur à méplats, écrou M4 et palonnier;structure;dark;34.0;34.0;24.0;4.926
 S04_tourelle_epaule;Tourelle et berceau de l’épaule;structure;dark;68.0;73.5;85.5;43.092
@@ -16,6 +16,9 @@ S07_poignet_inclinaison;Fourche du poignet et berceau de rotation;structure;dark
 S08_poignet_rotation_pince;Plateau de rotation et support de pince;structure;dark;43.0;37.0;44.5;13.161
 S09_doigt_menant;Doigt menant avec roue dentée;structure;dark;19.99;44.39;6.0;1.524
 S10_doigt_mene;Doigt entraîné avec roue dentée;structure;dark;19.78;44.5;6.0;1.619
+S11_boitier_electronique;Boîtier fixe inférieur et pattes de fixation;structure;white;166.0;166.0;40.0;73.647
+S12_fond_electronique;Fond démontable avec supports Uno et passages de colliers;structure;dark;140.0;140.0;9.0;46.822
+S13_platine_arriere;Platine amovible pour câble et futur interrupteur;structure;dark;42.0;25.0;2.4;2.33
 C01_avant;Demi-coque bras avant;coques;white;46.0;56.0;23.0;6.764
 C01_arriere;Demi-coque bras arriere;coques;white;46.0;56.0;23.0;7.612
 C02_avant;Demi-coque avant-bras avant;coques;white;46.0;38.0;23.0;5.19

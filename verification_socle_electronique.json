@@ -1,0 +1,92 @@
+{
+  "revision": "0.2",
+  "limites": "Vérification géométrique sur enveloppes nominales simplifiées, sans fils, vis ni tolérances d’impression. Fond retiré après débranchement USB et libération des câbles. Échantillonnage discret des déplacements, pas une validation physique.",
+  "extraction_fond": [
+    {
+      "descente_fond_mm": 0,
+      "intersection_boitier_mm3": 0.0
+    },
+    {
+      "descente_fond_mm": 1,
+      "intersection_boitier_mm3": 0.0
+    },
+    {
+      "descente_fond_mm": 3,
+      "intersection_boitier_mm3": 0.0
+    },
+    {
+      "descente_fond_mm": 5,
+      "intersection_boitier_mm3": 0.0
+    },
+    {
+      "descente_fond_mm": 10,
+      "intersection_boitier_mm3": 0.0
+    },
+    {
+      "descente_fond_mm": 20,
+      "intersection_boitier_mm3": 0.0
+    },
+    {
+      "descente_fond_mm": 30,
+      "intersection_boitier_mm3": 0.0
+    },
+    {
+      "descente_fond_mm": 40,
+      "intersection_boitier_mm3": 0.0
+    },
+    {
+      "descente_fond_mm": 55,
+      "intersection_boitier_mm3": 0.0
+    }
+  ],
+  "retrait_platine": [
+    {
+      "retrait_platine_mm": 0,
+      "intersection_boitier_mm3": 0.0
+    },
+    {
+      "retrait_platine_mm": 1,
+      "intersection_boitier_mm3": 0.0
+    },
+    {
+      "retrait_platine_mm": 3,
+      "intersection_boitier_mm3": 0.0
+    },
+    {
+      "retrait_platine_mm": 5,
+      "intersection_boitier_mm3": 0.0
+    },
+    {
+      "retrait_platine_mm": 10,
+      "intersection_boitier_mm3": 0.0
+    },
+    {
+      "retrait_platine_mm": 20,
+      "intersection_boitier_mm3": 0.0
+    }
+  ],
+  "retrait_USB": [
+    {
+      "retrait_fiche_mm": 0,
+      "intersection_boitier_mm3": 0.0
+    },
+    {
+      "retrait_fiche_mm": 2,
+      "intersection_boitier_mm3": 0.0
+    },
+    {
+      "retrait_fiche_mm": 5,
+      "intersection_boitier_mm3": 0.0
+    },
+    {
+      "retrait_fiche_mm": 10,
+      "intersection_boitier_mm3": 0.0
+    },
+    {
+      "retrait_fiche_mm": 20,
+      "intersection_boitier_mm3": 0.0
+    }
+  ],
+  "obstruction_passage_vertical_mm3": 0.0,
+  "anomalies": []
+}
