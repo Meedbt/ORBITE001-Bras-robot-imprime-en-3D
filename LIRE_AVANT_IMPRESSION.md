@@ -1,140 +1,166 @@
-# ORBITE V0.2 — ton bras robot personnel
+# ORBITE001 V0.3 MICRO TEST — guide du prototype
 
-Conception originale inspirée du style de ta référence : coques claires arrondies, bagues sombres, moteurs intégrés et petite pince. Prévue pour une **Bambu Lab A1 mini**, trois MG996R et trois MG90S. Le plateau utile est de 180 × 180 × 180 mm ; les pièces sont fournies séparément à leur taille réelle.
+Cette version est conçue pour essayer la programmation et les mouvements d’un bras à **six MG90S**. Elle conserve cinq articulations et une pince motorisée, avec une armature courte de **60 et 50 mm entre axes**. Les premiers essais se font **sans objet dans la pince**, avec l’armature seule, sans coques décoratives.
 
-**Statut : prototype de conception.** La géométrie a été générée et contrôlée numériquement. Aucun exemplaire n’a été imprimé, assemblé ou motorisé. Les dimensions réelles des servos, les palonniers, les jeux d’assemblage, les longueurs de vis, le passage des câbles, les butées et la tenue en charge restent à valider. Les six moteurs correspondent à cinq articulations du bras et un moteur de pince.
+**Statut : prototype CAO, encore non imprimé et non assemblé physiquement.** Les dimensions des moteurs achetés, les palonniers, les jeux, les vis, le câblage, les mouvements et les efforts réels restent à vérifier. La présence de six MG90S ne garantit pas que toutes les poses pourront être maintenues. Des ajustements, un allègement supplémentaire ou un rééquilibrage peuvent être nécessaires.
 
-La révision **V0.2** ajoute un compartiment électronique fixe sous le socle : boîtier S11, fond démontable S12 et platine arrière S13. Cet étage ajoute **40 mm** sous l’ancien bras. La mécanique du bras est conservée, avec un passage vertical de câbles ajouté dans S01. Les références électroniques montrées dans l’aperçu servent à préparer l’implantation ; leurs dimensions doivent être confrontées aux composants achetés.
+La version V0.2 à trois MG996R et trois MG90S est conservée dans son ancienne archive. Les pièces de cette version et celles de **MICRO TEST** ont des dimensions différentes : utiliser un seul pack pour un assemblage.
 
-## Ce que tu peux faire maintenant
+## Commencer par les gabarits
 
-1. Ouvrir `apercu_3d.html` dans ton navigateur. Tu peux tourner autour du bras, masquer les coques, afficher les moteurs et déplacer les six commandes d’aperçu. Le bouton **Socle ouvert** masque le boîtier et le bras pour isoler le fond et les références électroniques. Il s’agit d’un mode d’affichage, pas d’une simulation de démontage physique. Une image fixe est disponible dans `socle_electronique.png`. Le fichier interactif fonctionne sans téléchargement supplémentaire. Les commandes ne pilotent aucun moteur et leurs plages ne représentent pas des limites mécaniques validées.
-2. Dans Bambu Studio, importer **`gabarits_depart_A1_mini.3mf`**. Ce fichier contient uniquement deux gabarits de montage ; il ne contient ni réglages de tranchage certifiés ni programme d’impression.
-3. Choisir ton imprimante **A1 mini**, ta buse réelle et ton PLA, puis imprimer à **100 % de l’échelle**. Point de départ pour une buse de 0,4 mm : couches de 0,20 mm, quatre parois, sans supports. Vérifier l’aperçu de tranchage avant l’impression.
-4. Essayer un MG996R dans son grand gabarit et un MG90S dans le petit. Le corps doit passer sans forcer ; les oreilles doivent prendre appui et leurs trous doivent correspondre aux lumières. Vérifier aussi l’accès aux vis. Les corps nominaux utilisés sont 40,7 × 19,7 mm et 22,8 × 12,2 mm ; cela ne remplace pas la mesure des moteurs achetés.
-5. Si le montage serre, essayer le gabarit `jeu_0p5`. S’il flotte trop, essayer `jeu_0p2`. Les valeurs indiquent un **jeu par côté**, donc le gabarit 0,35 mm ajoute 0,70 mm aux dimensions du corps. Ne pas agrandir tout le bras pour corriger un logement.
+1. Ouvrir `apercu_3d.html` pour repérer les sous-ensembles. Les commandes changent seulement l’aperçu ; elles ne pilotent aucun moteur et ne définissent pas des limites mécaniques validées.
+2. Importer **`gabarits_depart_A1_mini.3mf`** dans Bambu Studio. Il contient deux pièces : `G_MG90S_jeu_0p35` et `G_palonnier_base_MG90S`. Il s’agit de géométrie, pas d’un fichier déjà tranché ou d’un profil d’impression certifié.
+3. Choisir l’A1 mini, la buse réelle et le filament, puis conserver **100 % de l’échelle**. Pour une buse de 0,4 mm, des couches de 0,20 mm et quatre parois constituent un point de départ à contrôler dans l’aperçu de tranchage.
+4. Essayer le corps d’un MG90S dans son gabarit. Il doit entrer sans forcer, avec ses oreilles en appui et ses trous en face des lumières. Vérifier aussi l’accès aux vis. L’ouverture est fondée sur un corps nominal de **22,8 × 12,2 mm** ; mesurer les exemplaires reçus, car les variantes peuvent différer.
+5. Présenter le palonnier d’origine sur le gabarit de base. Vérifier le centrage, la correspondance des trous et la place des têtes de vis. Le gabarit ne remplace pas le palonnier : les pièces imprimées se fixeront sur celui-ci.
 
-**À ce stade, imprimer les gabarits seulement.** Leurs résultats permettront d’ajuster les logements et les fixations avant une impression complète.
+Si le corps serre, essayer `G_MG90S_jeu_0p5`. S’il flotte trop, essayer `G_MG90S_jeu_0p2`. Le jeu est indiqué **par côté** : 0,35 mm ajoute donc 0,70 mm aux dimensions du corps. Corriger un logement localement plutôt que changer l’échelle du bras entier.
 
-## Organisation du pack
+Le gabarit **`G_paliers_608_623`** permet ensuite de vérifier les logements nominaux des deux types de roulements. Un roulement doit prendre appui sans déformer ni fendre la pièce. Les résultats des gabarits serviront à ajuster les logements avant l’impression complète.
+
+**À ce stade, imprimer seulement les gabarits et les essayer avec le matériel acheté.**
+
+## Contenu du pack
 
 | Élément | Utilisation |
 |---|---|
-| `stl/gabarits/` | Six gabarits de servos, avec trois jeux différents, et un gabarit de logements de roulements |
-| `stl/structure/` | Treize pièces, S01 à S13 : armature, pince et compartiment électronique |
-| `stl/coques/` | Dix-huit pièces de carrosserie démontable, caches et bagues |
-| `sources/orbite_v0.scad` | Source CAO modifiable dans OpenSCAD ; choix d’une pièce avec la variable `piece` |
+| `stl/gabarits/` | Trois jeux de logement MG90S, un gabarit 608/623 et un gabarit de palonnier de base |
+| `stl/structure/` | Treize pièces S01 à S13 : armature, pince et compartiment électronique |
+| `sources/orbite_micro_v0_3.scad` | Source CAO ; sélection d’une pièce par son identifiant avec la variable `piece` |
 | `sources/parametres.json` | Dimensions nominales et hypothèses de conception |
-| `liste_pieces.csv` | Liste des pièces et de leurs dimensions d’impression |
-| `assemblage_visuel.glb` | Assemblage coloré pour un logiciel de visualisation 3D |
-| `assemblage_visuel_NE_PAS_IMPRIMER.stl` | Vue d’ensemble figée, avec références des moteurs ; ce fichier n’est pas un plateau d’impression |
-| `socle_electronique.png` | Aperçu de l’implantation dans le socle ouvert |
-| `verification_export.json` | Contrôle des fichiers STL relus après export |
-| `calcul_statique_preliminaire.json` | Estimation de l’effort gravitaire, avec ses limites |
+| `liste_pieces.csv` | Inventaire et dimensions des pièces à imprimer |
+| `assemblage_visuel.glb` | Assemblage coloré pour un logiciel de visualisation |
+| `assemblage_visuel_NE_PAS_IMPRIMER.stl` | Vue d’ensemble figée, avec références des composants ; ce fichier n’est pas un plateau d’impression |
+| `apercu_3d.html` | Vue interactive autonome, avec sélection des pièces et mode Socle ouvert |
+| `socle_electronique.png` | Image de l’implantation nominale dans le compartiment |
+| `verification_export.json` | Rapport des contrôles numériques des STL exportés |
+| `calcul_statique_preliminaire.json` | Estimation gravitaire et limites de son interprétation |
 
-Le pack contient **38 STL individuels : 7 gabarits, 13 pièces de structure et 18 coques**. La vue éclatée aide à identifier les sous-ensembles ; l’écartement des pièces est illustratif. Les couleurs sont indicatives. Il n’est pas nécessaire d’avoir un AMS : chaque pièce peut être imprimée dans une seule couleur.
+Le pack comporte **18 STL individuels : 5 gabarits et 13 pièces de structure**. Cette version ne fournit pas de coques décoratives. Chaque pièce peut être imprimée dans une seule couleur ; un AMS n’est pas nécessaire.
 
-La carte Arduino, la fiche USB et les enveloppes de distribution d’alimentation et de fusible représentées dans la vue sont des **repères non imprimables**. Aucun module de distribution précis ni carte PCA9685 n’est imposé ou garanti compatible par cette implantation.
+Les six servos, les roulements, la carte, la fiche USB et la réserve de place pour la distribution électrique visibles dans l’aperçu sont des **références non imprimables**. La réserve de place ne garantit pas la compatibilité d’un module précis ou d’une carte PCA9685.
 
-## Architecture et ordre de montage envisagé
+## Architecture
 
-| Sous-ensemble | Pièces principales | Moteur / support |
+| Sous-ensemble | Pièces | Moteur et appui |
 |---|---|---|
-| Compartiment électronique fixe | S11, S12, S13, sous S01 | Arduino Uno R3 nominale, distribution et fusible à ajuster aux composants |
-| Socle et rotation | S01, S02, S03, S04 | M1 MG996R, roulement 608ZZ et liaison centrale M4 |
-| Épaule | S04 → S05 | M2 MG996R ; appui opposé par 624ZZ et axe M4 |
-| Coude | S05 → S06 | M3 MG996R ; appui opposé par 624ZZ et axe M4 |
-| Inclinaison du poignet | S06 → S07 | M4 MG90S ; appui opposé par 623ZZ et axe M3 |
+| Socle et rotation verticale | S01, S02, S03, S04 | M1 MG90S, roulement 608ZZ et retenue centrale M4 |
+| Épaule | S04 → S05 | M2 MG90S, appui opposé par 623ZZ et axe M3 |
+| Coude | S05 → S06 | M3 MG90S, appui opposé par 623ZZ et axe M3 |
+| Inclinaison du poignet | S06 → S07 | M4 MG90S, appui opposé par 623ZZ et axe M3 |
 | Rotation du poignet | S07 → S08 | M5 MG90S et palonnier fourni |
-| Pince | S08, S09, S10 | M6 MG90S ; doigt entraîné sur 623ZZ et axe M3 |
+| Pince | S08, S09, S10 | M6 MG90S, doigt entraîné sur 623ZZ et axe M3 |
+| Compartiment électronique fixe | S11, S12, S13 | Arduino Uno R3 nominale, distribution et fusible à adapter |
 
-Les axes moteurs restent ceux des servos. Les pièces imprimées se fixent sur les **palonniers d’origine** ; aucune cannelure de servo n’est imprimée. Les trous des adaptations sont oblongs pour permettre un ajustement, mais la compatibilité des palonniers reste à confirmer avec la référence exacte achetée.
+Les pièces imprimées se fixent sur les **palonniers d’origine** des servos. Aucune cannelure de servo n’est imprimée. Les lumières offrent une possibilité de réglage, mais leur correspondance avec les accessoires du vendeur doit être vérifiée par les gabarits.
 
-Pour la base, le logement d’écrou M4 de S03 s’ouvre par dessous : monter d’abord le palonnier d’origine sur le servo, insérer l’écrou dans S03, puis fixer S03 au palonnier par ses lumières. Le roulement et le support supérieur se montent ensuite, avant la tourelle. Les deux méplats du petit arbre transmettent la rotation à la tourelle ; la vis centrale retient cet ensemble.
+## Fixer le robot sur la table
 
-Pour les pivots opposés aux moteurs, les rondelles de calage doivent appuyer sur la **bague intérieure** du roulement. Le serrage ne doit pas immobiliser la bague extérieure ou la pièce mobile. Les longueurs de vis et les empilements de rondelles sont à mesurer au montage.
+Le boîtier S11 comporte **quatre pattes de fixation**, avec des passages pour vis M4. Son encombrement maximal avec pattes est de **166 × 166 mm**, compatible en dimensions avec le volume de l’A1 mini.
 
-Les demi-coques comportent des oreilles de jonction pour des vis M2 et des logements d’écrous. Ces oreilles ferment les deux moitiés ; leur rétention autour de l’armature, les ajustements et l’accès aux câbles doivent être essayés avant de les serrer définitivement. Les caches ronds ont leurs propres petits perçages. Les bagues sombres sont décoratives.
+Une solution pratique consiste à fixer le socle sur une planche avec quatre vis traversantes, rondelles et écrous, puis à serrer la planche sur la table avec deux serre-joints. Choisir les longueurs de vis selon l’épaisseur réelle du support. Vérifier que les quatre appuis et la planche restent stables avant d’alimenter les moteurs.
 
-## Électronique dans le socle : montage et accès
+**Fixer le socle avant tout essai motorisé**, même sans objet dans la pince : le centre de gravité se déplace avec le bras.
 
-![Implantation prévue dans le socle électronique](socle_electronique.png)
+## Montage progressif de la mécanique
 
-| Pièce | Implantation prévue |
+1. **Tester et repérer les six servos sur le banc**, avant de fixer leurs palonniers à l’armature. Vérifier le sens de mouvement et choisir une position de référence avec une petite plage de commande. Identifier M1 à M6 et leurs câbles. Une position géométrique de l’aperçu n’est pas automatiquement une valeur de commande adaptée au servo réel.
+2. Monter le servo M1 dans **S01**, puis présenter S02 et le roulement de base. Vérifier l’accès aux vis et le passage des fils avant de poursuivre.
+3. Pour **S03**, monter d’abord le palonnier d’origine sur le servo avec sa vis centrale, insérer l’écrou M4 dans le logement ouvert par dessous, puis fixer S03 au palonnier par les lumières. Le roulement et le support supérieur se montent ensuite, avant S04. Les méplats de l’arbre entraînent la tourelle ; la vis centrale retient l’ensemble.
+4. Monter **S04 et M2**, puis S05. Soutenir le bras pendant les essais : commencer près de la verticale et vérifier les petits mouvements de l’épaule avant d’ajouter le reste.
+5. Ajouter **M3 et S06**, puis le poignet S07–S08 et ses moteurs M4–M5. Vérifier un sous-ensemble à la fois, avec des câbles libres et sans appuyer le poids du bras sur un servo hors tension.
+6. Monter **M6 et les doigts S09–S10**. Vérifier à la main le jeu des engrenages et le mouvement du doigt entraîné, moteur désaccouplé si nécessaire. Ne pas forcer un servo ou la pince contre une butée.
+
+Pour les pivots opposés aux moteurs, les rondelles de calage doivent prendre appui sur la **bague intérieure** du roulement. Le serrage ne doit pas immobiliser la bague extérieure ou la pièce mobile. Mesurer les empilements de vis, entretoises et rondelles avant de choisir les longueurs définitives.
+
+Les fixations doivent retenir les pièces sans écraser les oreilles des microservos. Vérifier le dépassement des vis, la place des têtes, les efforts sur les petits palonniers et le trajet de chaque câble avant de motoriser le sous-ensemble.
+
+Les berceaux sont ouverts sur un côté pour faciliter l’insertion des moteurs avant les palonniers et avant de fermer les sous-ensembles. M1 s’insère par le dessus de S01 avant le palier. Sur les supports d’épaule, de coude et de poignet, présenter le corps par le côté ouvert, puis mettre les oreilles en appui. Le moteur de pince entre par le côté extérieur de S08, à l’opposé du petit roulement passif. Les câbles et connecteurs réels doivent rester libres pendant l’insertion. Les petites lumières d’oreilles permettent un réglage de ±0,25 mm ; elles ne remplacent pas la vérification des moteurs reçus.
+
+Le poignet S07 comporte un renfort extérieur qui contourne l’emplacement du moteur M5. Vérifier son impression et ne pas retirer ce renfort comme s’il s’agissait d’un support de tranchage.
+
+## Électronique dans le socle
+
+![Implantation nominale de l’électronique](socle_electronique.png)
+
+Le compartiment ajoute **40 mm** sous la mécanique. Le bouton **Socle ouvert** masque le bras et le boîtier pour montrer le fond et les références électroniques ; il s’agit d’un filtre d’affichage, pas d’une simulation de démontage physique.
+
+| Pièce | Implantation nominale |
 |---|---|
-| **S11 — boîtier électronique** | Corps Ø140 × 37 mm sous S01 ; quatre pattes cardinales intégrées avec trous M4 pour fixation sur une planche, accessibles par dessus. L’encombrement maximal avec pattes est de 166 × 166 mm. |
-| **S12 — fond démontable** | Fond Ø140 × 3 mm ; trois plots de 6 mm à lumières pour une Uno R3 nominale de 68,6 × 53,4 mm, connecteur USB tourné vers l’arrière. |
-| **S13 — platine arrière** | Platine démontable de 42 × 25 × 2,4 mm sur la face tangente arrière droite ; passage de câble Ø8 mm décalé de 8 mm à gauche et partie droite pleine à adapter à l’interrupteur acheté. |
+| **S11 — boîtier fixe** | Corps Ø140 × 37 mm, quatre pattes M4 et passages arrière |
+| **S12 — fond démontable** | Fond Ø140 × 3 mm, trois plots de 6 mm à lumières pour une Uno R3 de 68,6 × 53,4 mm |
+| **S13 — platine arrière** | Platine 42 × 25 × 2,4 mm, passage de câble Ø8 mm décalé à gauche, partie pleine à adapter à l’interrupteur |
 
-L’ouverture arrière pour la connexion USB mesure **30 × 21 mm**. La découpe n’assure pas à elle seule la compatibilité avec tous les câbles : vérifier la forme de la fiche, son accès et le dégagement nécessaire une fois branchée. Les clones Uno peuvent aussi différer de la carte de référence.
+Le connecteur USB de l’Arduino est tourné vers l’arrière. Son ouverture mesure **30 × 21 mm** ; vérifier la carte et la fiche de câble achetées, y compris la place pour brancher et débrancher. Les clones Uno peuvent avoir des connecteurs différents.
 
-Une zone de **60 × 22 mm devant la carte**, avec des fentes pour colliers, est réservée à la distribution d’alimentation et au fusible. Ces enveloppes ne définissent pas un module précis. Mesurer les composants, leurs bornes et leurs fils avant de percer ou d’imprimer l’ensemble définitif.
+Une zone de **60 × 22 mm devant la carte** et des fentes pour colliers permettent d’étudier l’installation de la distribution et du porte-fusible. Vérifier les dimensions de ces composants, leurs bornes et leurs fils avant de les fixer.
 
-L’ouverture du boîtier derrière S13 mesure **28 × 17 mm**. Le trou de câble et les deux fixations réduisent la place disponible pour l’interrupteur : la découpe doit être définie après achat, en vérifiant aussi la profondeur du composant et ses bornes.
+L’ouverture derrière S13 mesure **28 × 17 mm**. Le passage Ø8 et les vis réduisent la place disponible pour l’interrupteur : définir sa découpe après achat, en tenant compte de la profondeur du corps et des bornes. Prévoir une retenue du câble basse tension pour qu’une traction ne porte pas sur les connexions.
 
-Ordre de montage envisagé :
+Ordre de fermeture du compartiment :
 
-1. Présenter la carte réelle, la fiche USB, l’interrupteur et le câble d’alimentation. Vérifier les perçages et l’accès aux connecteurs avant de fixer la carte.
-2. Fixer S11 sous S01 avec **quatre vis M4 traversantes**, leurs écrous et les rondelles nécessaires. Les serrer pendant que l’intérieur est accessible, avant d’installer le fond. Insérer aussi les quatre écrous M3 du fond **par le haut de leurs bossages**, avant fermeture. Fixer les pattes du boîtier sur une planche stable avec de la visserie M4 adaptée au support.
-3. Fixer l’Arduino sur les trois plots du fond S12 avec **trois vis M2,5 en nylon**, après ajustement des lumières à la carte réelle. Ne pas contraindre le circuit imprimé ni laisser de vis toucher ses composants.
-4. Retenir la distribution et le porte-fusible dans la zone avant avec des colliers. Prévoir l’accès au fusible et la place nécessaire pour les bornes et les fils.
-5. Faire passer les câbles vers le bras par l’ouverture verticale **14 × 9 mm**, centrée en **(−40 ; −18 mm)** dans S01. Retenir les câbles dans le compartiment, protéger leur passage et garder du mou pour la rotation de la base. Vérifier le trajet dans toute la plage de mouvement retenue.
-6. Adapter la zone pleine de S13 à l’interrupteur acheté. Le passage Ø8 accueille un câble basse tension ; ajouter une retenue adaptée pour éviter qu’une traction atteigne les connexions. Fixer la platine par **deux vis M3 et écrous captifs**.
-7. Fermer le fond par **quatre vis M3 et les écrous captifs préinstallés**, après vérification de l’absence de fils pincés. Pour le retirer, débrancher d’abord l’USB et libérer les fils qui le relient au reste du robot, puis soutenir le fond et la carte pendant la descente. Le fond et la platine arrière permettent l’entretien sans ouvrir les coques du bras.
+1. Fixer S11 sous S01 avec quatre vis M4 traversantes, leurs écrous et rondelles. Serrer tant que l’intérieur reste accessible.
+2. Insérer les quatre écrous M3 du fond **par le haut des bossages**, avant fermeture.
+3. Fixer la carte sur les trois plots du fond avec des vis **M2,5 en nylon**, adaptées aux lumières et à la carte réelle. Ne pas contraindre le circuit imprimé.
+4. Installer la distribution et le fusible, puis retenir leurs câbles avec des colliers. Garder l’accès au fusible.
+5. Faire passer les fils vers le bras par l’ouverture **14 × 9 mm** dans S01, centrée en **(−40 ; −18 mm)**. Protéger le passage et garder une réserve de longueur pour la rotation de base, en vérifiant toute la plage retenue.
+6. Installer S13 avec ses deux vis M3 et écrous captifs, puis fermer S12 avec quatre vis M3. Vérifier qu’aucun fil ne reste pincé.
 
-Les longueurs de vis restent à déterminer sur l’empilement réel. Vérifier leur dépassement, l’insertion des écrous captifs et l’accès de l’outil avant de tout fermer. Le montage du compartiment doit préserver l’accès au palonnier et à l’écrou de S03 lors de l’assemblage initial de la base.
+Pour enlever le fond, débrancher l’USB, libérer les fils qui relient le fond au bras, puis soutenir le fond et la carte pendant la descente. Les longueurs de vis et l’accès aux outils restent à vérifier sur les composants réels.
 
-Pour les premiers essais, **alimenter l’Arduino par USB**. Les six servos reçoivent une **alimentation séparée adaptée**, distribuée dans le socle et protégée par un fusible à dimensionner avec les composants retenus. Relier la **masse des servos à celle de l’Arduino** pour la référence des signaux. Ne pas alimenter les servos par la broche 5 V de l’Arduino. L’adaptateur secteur reste **à l’extérieur** ; seule sa sortie basse tension entre dans le robot.
+Pour les premiers essais, alimenter **l’Arduino par USB** et les servos par **une alimentation séparée adaptée**, distribuée dans le socle et protégée par un fusible à dimensionner. Relier la **masse des servos à la masse de l’Arduino** pour la référence des signaux. Les six servos ne doivent pas être alimentés par la broche 5 V de l’Arduino. L’adaptateur secteur reste **à l’extérieur** ; seule sa sortie basse tension entre dans le socle.
 
-## Quincaillerie à prévoir après validation des gabarits
+## Quincaillerie à prévoir après les gabarits
 
-- 1 roulement **608ZZ : 8 × 22 × 7 mm** pour la base.
-- 2 roulements **624ZZ : 4 × 13 × 5 mm** pour l’épaule et le coude.
-- 2 roulements **623ZZ : 3 × 10 × 4 mm** pour le poignet et le doigt entraîné.
-- Vis, écrous et rondelles **M2** pour les petits servos, les adaptations et les demi-coques ; prévoir plusieurs longueurs, à confirmer sur le montage réel.
-- Vis, écrous et rondelles **M3** pour les gros servos, le support supérieur et les petits pivots ; écrous frein aux endroits mobiles si l’empilement le permet.
-- Vis, écrous et rondelles **M4** pour le couplage de base et les pivots principaux.
-- Pour le compartiment : **4 vis M4 traversantes, écrous et rondelles** entre S01 et S11, **4 vis M3 et leurs écrous captifs** pour le fond, **2 vis M3 et leurs écrous captifs** pour la platine, et **3 vis M2,5 nylon** pour l’Arduino. Prévoir aussi la fixation M4 des pattes sur la planche ; longueurs à vérifier.
-- Les palonniers, leurs vis centrales spécifiques et les accessoires fournis avec les six servos.
-- Une planche pour fixer le socle et de petits colliers pour retenir les câbles sans gêner les articulations.
+- **6 MG90S**, leurs palonniers, vis centrales et accessoires d’origine.
+- **1 roulement 608ZZ : 8 × 22 × 7 mm**, pour la base.
+- **4 roulements 623ZZ : 3 × 10 × 4 mm**, pour l’épaule, le coude, le poignet et le doigt entraîné.
+- Vis, écrous et rondelles **M2** pour les microservos et les adaptations aux palonniers, selon les pièces réelles.
+- Vis, écrous et rondelles **M3** pour les petits pivots et les fixations adaptées ; écrous frein aux pivots si l’empilement le permet.
+- Vis, écrous et rondelles **M4** pour la retenue centrale de base, les quatre fixations S01/S11 et les pattes sur la planche.
+- Pour le compartiment : quatre vis M3 et écrous captifs du fond, deux vis M3 et écrous captifs de S13, trois vis M2,5 nylon pour la carte.
+- Colliers, protections de passage de fils et planche de fixation avec serre-joints.
 
-Ne pas commander un lot de vis basé sur des longueurs supposées : les palonniers réels et le montage des roulements peuvent modifier les empilements. Le gabarit de roulements permet de vérifier leurs logements nominaux avant d’imprimer l’armature.
+Les longueurs ne sont pas figées : les palonniers, roulements, rondelles et le support réel déterminent les empilements. Éviter de commander des longueurs supposées avant d’avoir vérifié les interfaces.
 
-## Impression des sous-ensembles après ajustement
+## Impression après ajustement
 
-Les STL individuels sont posés à Z = 0 et orientés pour proposer une face de départ. Certaines fourches et certains berceaux présentent néanmoins des porte-à-faux : leur orientation et leurs supports doivent être vérifiés dans Bambu Studio. La compatibilité dimensionnelle avec le plateau ne constitue pas une validation du tranchage.
+Les STL individuels sont à l’échelle réelle et posés à Z = 0, avec une orientation de départ proposée. Vérifier chaque orientation, les ponts et les supports dans Bambu Studio ; tenir dans le volume de l’imprimante ne valide pas le tranchage.
 
-Pour les premiers essais, un point de départ est : PLA, buse de 0,4 mm, couches de 0,20 mm, quatre à cinq parois et 30–40 % de remplissage pour l’armature. Les coques sont déjà creuses, avec environ 2,2 mm de paroi nominale et des renforcements locaux. Les dents de pince demandent une impression propre et un retrait soigneux des bavures. Imprimer et contrôler un sous-ensemble avant le suivant.
+Pour les essais d’armature en PLA, une buse de 0,4 mm, des couches de 0,20 mm, quatre parois et un remplissage de 30–40 % constituent un point de départ. Les petits paliers, les dents de la pince et les zones de vis demandent un contrôle attentif de l’aperçu et des bavures. Imprimer puis essayer un sous-ensemble avant le suivant.
 
-Pour les nouvelles pièces du socle :
+- **S11** est retourné, face annulaire supérieure vers le plateau ; vérifier les supports des ouvertures et logements d’écrous.
+- **S12** se pose sur son fond plat, plots vers le haut.
+- **S13** se pose à plat ; sa découpe finale dépendra du câble, du passe-câble et de l’interrupteur choisis.
 
-- **S11** est fourni retourné, face annulaire supérieure vers le plateau. Contrôler les porte-à-faux et les supports dans le trancheur, notamment autour des logements d’écrous et des ouvertures.
-- **S12** se pose sur son fond plat, avec les plots de la carte vers le haut.
-- **S13** se pose à plat. Le passe-câble ou la bague retenue et l’interrupteur réels peuvent demander une adaptation de la platine.
+## Premiers mouvements et limites
 
-## Portée des contrôles numériques
+Commencer **sans charge**, avec le bras soutenu et dans une pose proche de la verticale. Tester de petites amplitudes et un moteur à la fois, puis ajouter progressivement les mouvements combinés. La plage de l’aperçu reste une commande de visualisation ; les limites des servos et du mécanisme devront être déterminées sur le prototype.
 
-Le contrôle interne des **38 pièces individuelles** indique des géométries fermées, un volume positif et une seule composante par pièce. Cela vérifie les solides numériques, sans valider leur impression ni leurs ajustements réels.
+Même à vide, l’épaule porte les maillons, les moteurs du coude et du poignet, les câbles et la pince. Le MG90S est annoncé à **1,8 kgf·cm au blocage à 4,8 V** par TowerPro. Le couple de blocage ne constitue pas un couple continu admissible. Un essai sans objet ne supprime donc pas le besoin de vérifier la masse et les efforts.
 
-Les vérifications locales du compartiment ont testé **neuf positions de descente du fond**, avec l’USB débranché et les fils libérés, **six positions de retrait de la platine** et **cinq positions de retrait de la fiche USB**. Un gabarit de **12 × 7 mm** a également été contrôlé dans le passage de S01. Dans ces positions du modèle nominal, aucune interférence supérieure au seuil numérique de **0,5 mm³** n’a été relevée.
+La masse réelle dépendra du tranchage et des accessoires reçus. Le fichier `calcul_statique_preliminaire.json` décrit l’hypothèse utilisée pour l’estimation gravitaire ; il ne donne pas une charge utile garantie. L’accélération, les frottements, la flexion, le fluage, l’échauffement et les efforts de pince restent à valider. Le calcul conservateur à vide donne environ **0,70 kgf·cm à l’épaule dans la pose d’essai** et **1,56 kgf·cm à l’horizontale**, avec des pièces supposées pleines en PLA. Cette dernière valeur est proche du couple de blocage annoncé : **la pose entièrement horizontale ne fait pas partie des premiers essais recommandés**, même sans objet dans la pince. Si un servo peine à tenir la pose, arrêter l’essai et étudier la géométrie, la masse ou l’équilibrage.
 
-Ces contrôles locaux ne constituent pas un contrôle complet de toutes les collisions de l’assemblage ou de toutes les positions intermédiaires. Les références simplifiées ne représentent pas tous les composants, vis, câbles ou efforts d’un montage réel ; mesures, essais d’ajustement et contrôle des mouvements restent nécessaires.
+Les contrôles numériques du pack doivent être lus avec leurs limites : ils concernent les solides et enveloppes nominales modélisés. Ils ne représentent pas tous les palonniers, vis, fils ou connecteurs réels et ne certifient pas toutes les positions intermédiaires. Les rapports disponibles accompagnent le modèle ; ils ne remplacent pas les essais d’ajustement, de montage et de mouvement.
 
-## Charge et mouvements : ce qui reste à vérifier
+## Contrôles fournis avec cette révision
 
-Une estimation gravitaire a été faite avec un objet théorique de **20 g**, la masse des servos, une marge pour la quincaillerie et les pièces imprimées supposées en PLA plein de densité 1,24 g/cm³. Cette hypothèse ne prédit pas la masse d’une impression à 40 % de remplissage.
+- **18 STL individuels**, contrôlés fermés, de volume positif et en une seule composante ; dimensions inférieures à 175 mm.
+- Contrôle de la pose d’essai et de **24 poses voisines**, en modifiant un seul axe de ±5° ou ±10° : aucun chevauchement supérieur à 0,5 mm³ entre les pièces imprimées et les corps nominaux des servos. Cela ne valide ni les trajectoires intermédiaires ni les angles de commande réels.
+- Le compartiment électronique conserve ses contrôles d’extraction du fond, de retrait de la platine et de dégagement USB, avec des enveloppes simplifiées.
+- Les six passages de montage des servos ont été contrôlés à huit positions chacun, sans fils ni palonniers. Des sondes de matière contrôlent aussi des appuis près des vis et le renfort du poignet ; ce ne sont pas des calculs de résistance.
+- La masse calculée des seules pièces imprimées mobiles est d’environ **67,9 g si elles étaient pleines en PLA**. Elle exclut moteurs, vis, roulements et fils ; la masse après tranchage sera différente.
 
-L’effort estimé à l’épaule est d’environ **2,5 kgf·cm dans la pose de présentation**, et **4,75 kgf·cm dans une pose entièrement horizontale**. Ce ne sont pas des charges admissibles : le couple de blocage annoncé pour un servo ne définit pas son couple continu. L’accélération, l’échauffement, les frottements, la flexion, le fluage et les efforts de pince ne sont pas validés.
+Les rapports détaillés sont `controle_maillages.json`, `verification_export.json`, `verification_poses_micro.json`, `verification_insertion_servos.json`, `verification_socle_electronique.json` et `calcul_statique_preliminaire.json`. Aucun prototype physique n’a encore été essayé.
 
-Deux points d’ancrage sont prévus pour étudier une compensation de l’épaule. Le ressort ou l’élastique, sa force et son débattement restent à dimensionner ; aucun ressort précis n’est prescrit. Les premiers essais motorisés devront se faire sans charge, avec le bras soutenu, progressivement. La pose horizontale doit être étudiée avant un maintien prolongé.
+## Programmation
 
-Les vérifications d’interférences utilisent les enveloppes nominales modélisées, sans toutes les vis, tous les palonniers ou les câbles. Elles ne permettent pas de déclarer l’assemblage entier exempt de collision. La trajectoire complète des articulations reste à vérifier et à limiter. Les réglages d’aperçu ne sont pas des consignes moteur prêtes à utiliser.
+Le programme Arduino reste à développer. Les organigrammes utilisés à l’université avec **VBuilder** peuvent servir à préparer la logique des séquences, mais ce pack ne fournit pas de chaîne de programmation VBuilder vers Arduino ni de programme moteur prêt à lancer.
 
 ## Références dimensionnelles
 
-- [A1 mini — guide Bambu Lab, volume 180 × 180 × 180 mm](https://cdn1.bambulab.com/documentation/quick-start-f507128172bdf/Quick%20start%20guide%20-%20A1%20mini-EN.pdf)
-- [MG996R — fiche TowerPro](https://towerpro.com.tw/product/mg996R/)
-- [MG90S — fiche Waveshare](https://www.waveshare.com/mg90s-servo.htm)
+- [MG90S — fiche du fabricant TowerPro](https://towerpro.com.tw/product/mg90s-3/)
 - [Arduino Uno R3 — fiche technique officielle et dessin de la carte](https://docs.arduino.cc/resources/datasheets/A000066-datasheet.pdf)
+- [A1 mini — guide Bambu Lab et volume 180 × 180 × 180 mm](https://cdn1.bambulab.com/documentation/quick-start-f507128172bdf/Quick%20start%20guide%20-%20A1%20mini-EN.pdf)
 
-Les variantes et les produits génériques peuvent avoir des cotes différentes : les mesures des exemplaires reçus priment sur ces valeurs nominales.
+Les mesures des exemplaires reçus priment sur les dimensions nominales du modèle.

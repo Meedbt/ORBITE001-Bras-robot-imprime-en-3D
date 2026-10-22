@@ -2,18 +2,18 @@
   "presentation": {
     "angles_deg": [
       0,
-      25,
+      10,
       45,
-      100,
+      85,
       0,
-      18
+      12
     ],
     "couples_statiques_kgf_cm": {
-      "upper": 2.529,
-      "forearm": 1.237,
-      "wrist": 0.114
+      "upper": 0.701,
+      "forearm": 0.557,
+      "wrist": 0.173
     },
-    "charge_g": 20.0
+    "charge_g": 0.0
   },
   "bras_horizontal": {
     "angles_deg": [
@@ -25,11 +25,12 @@
       0
     ],
     "couples_statiques_kgf_cm": {
-      "upper": 4.748,
-      "forearm": 1.688,
-      "wrist": 0.493
+      "upper": 1.557,
+      "forearm": 0.715,
+      "wrist": 0.245
     },
-    "charge_g": 20.0
+    "charge_g": 0.0
   },
-  "limites": "Masses PLA pleines calculees; pas de validation des engrenages, du fluage, des efforts de pince, de la temperature, des mouvements ou des servos reels. Un couple de blocage ne constitue pas un couple continu admissible."
+  "masse_imprimee_mobile_PLA_plein_g": 67.9,
+  "limites": "Essais sans charge, sans coques. Masses PLA pleines calculees; pas de validation des engrenages, du fluage, des efforts de pince, de la temperature, des mouvements ou des servos reels. Un couple de blocage ne constitue pas un couple continu admissible."
 }

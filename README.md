@@ -1,29 +1,31 @@
 # ORBITE001 — Bras robot imprimé en 3D
 
-Projet personnel réalisé en complément d’un projet universitaire pour apprendre à concevoir, fabriquer et programmer un bras robot.
+Projet personnel réalisé en complément d’un projet universitaire pour apprendre à fabriquer et programmer un bras robot.
 
-L’objectif est de construire un petit bras de bureau capable de saisir et déplacer des objets légers. Il possède **cinq articulations et une pince motorisée**, soit **six servomoteurs**, avec une armature et des coques démontables imprimées en 3D.
+La version **V0.3 MICRO TEST** utilise **six MG90S** : cinq articulations et une pince motorisée. L’armature est raccourcie, avec deux maillons de **60 et 50 mm entre axes**, et se monte sans coques décoratives pour les premiers essais **sans charge**.
 
-![Aperçu du prototype ORBITE](apercu.png)
+![Aperçu du prototype ORBITE001](apercu.png)
 
 ## Matériel prévu
 
-- **3 MG996R** : rotation de la base, épaule et coude.
-- **3 MG90S** : inclinaison du poignet, rotation du poignet et pince.
-- Carte compatible **Arduino Uno R3** et alimentation externe adaptée aux servos.
-- Pièces en PLA imprimées sur une **Bambu Lab A1 mini**, roulements et visserie.
+- **6 servomoteurs MG90S positionnels**, avec leurs palonniers et vis centrales.
+- Carte compatible **Arduino Uno R3**, distribution d’alimentation et fusible dans le socle.
+- Alimentation externe adaptée aux servos ; adaptateur secteur à l’extérieur du robot.
+- Pièces imprimées sur une **Bambu Lab A1 mini**, un roulement 608ZZ, quatre 623ZZ et visserie.
 
-La programmation est prévue avec Arduino et **Flowcode**, pour travailler à partir d’organigrammes.
+Le projet permet de travailler la logique en organigrammes utilisée à l’université avec **VBuilder**. Le programme Arduino et la transposition de cette logique restent à développer.
 
 ## État du projet
 
-La première conception 3D **V0**, les fichiers STL et les gabarits de montage sont disponibles. L’impression, l’assemblage et la programmation restent à réaliser. Le prototype n’a pas encore été validé sur du matériel réel.
+Cette version est un **prototype CAO à tester**, encore non imprimé et non assemblé physiquement. Le fonctionnement avec les six MG90S, les mouvements et la tenue en charge restent à valider ; un ajustement ou un rééquilibrage peut être nécessaire.
+
+Le pack contient **18 STL : 5 gabarits et 13 pièces de structure**, dont le compartiment électronique à fond démontable. L’ancienne V0.2 reste une autre conception : ses pièces ne doivent pas être mélangées avec celles de la version micro.
 
 ## Fichiers
 
-- [`stl/`](stl/) : pièces de structure, coques et gabarits.
-- [`sources/`](sources/) : source CAO OpenSCAD et paramètres de conception.
-- [`apercu_3d.html`](apercu_3d.html) : vue 3D interactive à ouvrir dans un navigateur.
-- [`LIRE_AVANT_IMPRESSION.md`](LIRE_AVANT_IMPRESSION.md) : guide d’impression et de montage envisagé.
+- [`stl/`](stl/) : armature, pince, socle électronique et gabarits.
+- [`sources/`](sources/) : source CAO OpenSCAD et paramètres.
+- [`apercu_3d.html`](apercu_3d.html) : aperçu interactif ; le bouton **Socle ouvert** montre l’implantation électronique.
+- [`LIRE_AVANT_IMPRESSION.md`](LIRE_AVANT_IMPRESSION.md) : guide d’impression, de montage et de premiers essais.
 
-**Première étape :** imprimer les deux gabarits du fichier [`gabarits_depart_A1_mini.3mf`](gabarits_depart_A1_mini.3mf) et vérifier l’ajustement des servos avant d’imprimer le bras complet.
+**Première étape :** imprimer les deux gabarits de [`gabarits_depart_A1_mini.3mf`](gabarits_depart_A1_mini.3mf), puis vérifier un MG90S réel et son palonnier avant d’imprimer l’armature.

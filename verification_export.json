@@ -1,48 +1,12 @@
 {
   "statut": "PROTOTYPE NON VALIDE SUR MATERIEL",
-  "nombre_STL_individuels": 38,
+  "nombre_STL_individuels": 18,
   "anomalies": [],
   "simplification_geometrique_mm": 0.005,
   "interferences_volumiques_pose_initiale_superieures_a_0p5_mm3": [],
   "plages_de_mouvement": "NON VALIDEES",
   "validation_charge": "NON REALISEE SUR MATERIEL",
   "pieces": [
-    {
-      "piece": "G_MG996R_jeu_0p2",
-      "ferme_apres_relecture_STL": true,
-      "volume_positif": true,
-      "dimensions_mm": [
-        61.0,
-        30.0,
-        3.4
-      ],
-      "compatible_volume_180_mm": true,
-      "ok": true
-    },
-    {
-      "piece": "G_MG996R_jeu_0p35",
-      "ferme_apres_relecture_STL": true,
-      "volume_positif": true,
-      "dimensions_mm": [
-        61.0,
-        30.0,
-        3.4
-      ],
-      "compatible_volume_180_mm": true,
-      "ok": true
-    },
-    {
-      "piece": "G_MG996R_jeu_0p5",
-      "ferme_apres_relecture_STL": true,
-      "volume_positif": true,
-      "dimensions_mm": [
-        61.0,
-        30.0,
-        3.4
-      ],
-      "compatible_volume_180_mm": true,
-      "ok": true
-    },
     {
       "piece": "G_MG90S_jeu_0p2",
       "ferme_apres_relecture_STL": true,
@@ -80,13 +44,25 @@
       "ok": true
     },
     {
-      "piece": "G_paliers_624_623",
+      "piece": "G_paliers_608_623",
       "ferme_apres_relecture_STL": true,
       "volume_positif": true,
       "dimensions_mm": [
-        50.0,
-        25.0,
-        6.2
+        56.0,
+        30.0,
+        7.2
+      ],
+      "compatible_volume_180_mm": true,
+      "ok": true
+    },
+    {
+      "piece": "G_palonnier_base_MG90S",
+      "ferme_apres_relecture_STL": true,
+      "volume_positif": true,
+      "dimensions_mm": [
+        26.0,
+        26.0,
+        3.0
       ],
       "compatible_volume_180_mm": true,
       "ok": true
@@ -98,7 +74,7 @@
       "dimensions_mm": [
         116.0,
         116.0,
-        56.0
+        40.0
       ],
       "compatible_volume_180_mm": true,
       "ok": true
@@ -120,8 +96,8 @@
       "ferme_apres_relecture_STL": true,
       "volume_positif": true,
       "dimensions_mm": [
-        34.0,
-        34.0,
+        26.0,
+        26.0,
         24.0
       ],
       "compatible_volume_180_mm": true,
@@ -133,8 +109,8 @@
       "volume_positif": true,
       "dimensions_mm": [
         68.0,
-        73.5,
-        85.5
+        52.7,
+        68.0
       ],
       "compatible_volume_180_mm": true,
       "ok": true
@@ -144,9 +120,9 @@
       "ferme_apres_relecture_STL": true,
       "volume_positif": true,
       "dimensions_mm": [
-        32.7,
-        129.45,
-        85.5
+        28.2,
+        83.3,
+        61.5
       ],
       "compatible_volume_180_mm": true,
       "ok": true
@@ -156,8 +132,8 @@
       "ferme_apres_relecture_STL": true,
       "volume_positif": true,
       "dimensions_mm": [
-        32.7,
-        103.8,
+        28.2,
+        73.3,
         61.5
       ],
       "compatible_volume_180_mm": true,
@@ -243,222 +219,6 @@
         42.0,
         25.0,
         2.4
-      ],
-      "compatible_volume_180_mm": true,
-      "ok": true
-    },
-    {
-      "piece": "C01_avant",
-      "ferme_apres_relecture_STL": true,
-      "volume_positif": true,
-      "dimensions_mm": [
-        46.0,
-        56.0,
-        23.0
-      ],
-      "compatible_volume_180_mm": true,
-      "ok": true
-    },
-    {
-      "piece": "C01_arriere",
-      "ferme_apres_relecture_STL": true,
-      "volume_positif": true,
-      "dimensions_mm": [
-        46.0,
-        56.0,
-        23.0
-      ],
-      "compatible_volume_180_mm": true,
-      "ok": true
-    },
-    {
-      "piece": "C02_avant",
-      "ferme_apres_relecture_STL": true,
-      "volume_positif": true,
-      "dimensions_mm": [
-        46.0,
-        38.0,
-        23.0
-      ],
-      "compatible_volume_180_mm": true,
-      "ok": true
-    },
-    {
-      "piece": "C02_arriere",
-      "ferme_apres_relecture_STL": true,
-      "volume_positif": true,
-      "dimensions_mm": [
-        46.0,
-        38.0,
-        23.0
-      ],
-      "compatible_volume_180_mm": true,
-      "ok": true
-    },
-    {
-      "piece": "C03_gauche",
-      "ferme_apres_relecture_STL": true,
-      "volume_positif": true,
-      "dimensions_mm": [
-        69.0,
-        45.0,
-        34.0
-      ],
-      "compatible_volume_180_mm": true,
-      "ok": true
-    },
-    {
-      "piece": "C03_droite",
-      "ferme_apres_relecture_STL": true,
-      "volume_positif": true,
-      "dimensions_mm": [
-        69.0,
-        45.0,
-        34.0
-      ],
-      "compatible_volume_180_mm": true,
-      "ok": true
-    },
-    {
-      "piece": "C04_gauche",
-      "ferme_apres_relecture_STL": true,
-      "volume_positif": true,
-      "dimensions_mm": [
-        81.0,
-        45.0,
-        34.0
-      ],
-      "compatible_volume_180_mm": true,
-      "ok": true
-    },
-    {
-      "piece": "C04_droite",
-      "ferme_apres_relecture_STL": true,
-      "volume_positif": true,
-      "dimensions_mm": [
-        81.0,
-        45.0,
-        34.0
-      ],
-      "compatible_volume_180_mm": true,
-      "ok": true
-    },
-    {
-      "piece": "C05_gauche",
-      "ferme_apres_relecture_STL": true,
-      "volume_positif": true,
-      "dimensions_mm": [
-        39.948,
-        21.285,
-        18.0
-      ],
-      "compatible_volume_180_mm": true,
-      "ok": true
-    },
-    {
-      "piece": "C05_droite",
-      "ferme_apres_relecture_STL": true,
-      "volume_positif": true,
-      "dimensions_mm": [
-        39.948,
-        21.285,
-        29.0
-      ],
-      "compatible_volume_180_mm": true,
-      "ok": true
-    },
-    {
-      "piece": "C06_gauche",
-      "ferme_apres_relecture_STL": true,
-      "volume_positif": true,
-      "dimensions_mm": [
-        27.661,
-        38.2,
-        24.0
-      ],
-      "compatible_volume_180_mm": true,
-      "ok": true
-    },
-    {
-      "piece": "C06_droite",
-      "ferme_apres_relecture_STL": true,
-      "volume_positif": true,
-      "dimensions_mm": [
-        27.661,
-        38.2,
-        24.0
-      ],
-      "compatible_volume_180_mm": true,
-      "ok": true
-    },
-    {
-      "piece": "C07_cache_rond",
-      "ferme_apres_relecture_STL": true,
-      "volume_positif": true,
-      "dimensions_mm": [
-        52.0,
-        52.0,
-        4.15
-      ],
-      "compatible_volume_180_mm": true,
-      "ok": true
-    },
-    {
-      "piece": "C07_bague",
-      "ferme_apres_relecture_STL": true,
-      "volume_positif": true,
-      "dimensions_mm": [
-        58.0,
-        58.0,
-        2.0
-      ],
-      "compatible_volume_180_mm": true,
-      "ok": true
-    },
-    {
-      "piece": "C08_cache_rond",
-      "ferme_apres_relecture_STL": true,
-      "volume_positif": true,
-      "dimensions_mm": [
-        52.0,
-        52.0,
-        4.15
-      ],
-      "compatible_volume_180_mm": true,
-      "ok": true
-    },
-    {
-      "piece": "C08_bague",
-      "ferme_apres_relecture_STL": true,
-      "volume_positif": true,
-      "dimensions_mm": [
-        58.0,
-        58.0,
-        2.0
-      ],
-      "compatible_volume_180_mm": true,
-      "ok": true
-    },
-    {
-      "piece": "C09_articulation_poignet_gauche",
-      "ferme_apres_relecture_STL": true,
-      "volume_positif": true,
-      "dimensions_mm": [
-        46.0,
-        33.6,
-        22.0
-      ],
-      "compatible_volume_180_mm": true,
-      "ok": true
-    },
-    {
-      "piece": "C09_articulation_poignet_droite",
-      "ferme_apres_relecture_STL": true,
-      "volume_positif": true,
-      "dimensions_mm": [
-        46.0,
-        33.6,
-        22.0
       ],
       "compatible_volume_180_mm": true,
       "ok": true

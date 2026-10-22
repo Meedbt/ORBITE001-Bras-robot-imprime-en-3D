@@ -1,4 +1,13 @@
 {
+  "revision": "0.3",
+  "servoTypes": [
+    "M1 · MG90S",
+    "M2 · MG90S",
+    "M3 · MG90S",
+    "M4 · MG90S",
+    "M5 · MG90S",
+    "M6 · MG90S"
+  ],
   "errors": [],
   "baseOpen": {
     "open": true,
@@ -14,5 +23,5 @@
   "exploded": true,
   "updated": 30,
   "mobileOverflow": false,
-  "meshes": 46
+  "meshes": 28
 }

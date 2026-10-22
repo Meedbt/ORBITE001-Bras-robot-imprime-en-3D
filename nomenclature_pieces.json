@@ -1,77 +1,11 @@
 [
   {
-    "id": "G_MG996R_jeu_0p2",
-    "designation": "Gabarit MG996R, jeu 0.20 mm par côté",
-    "groupe": "gabarits",
-    "couleur": "white",
-    "volume_cm3": 3.152,
-    "masse_pleine_PLA_g": 3.91,
-    "dimensions_impression_mm": [
-      61.0,
-      30.0,
-      3.4
-    ],
-    "ferme": true,
-    "volume_positif": true,
-    "owner": "base",
-    "orientation_deg": [
-      0,
-      0,
-      0
-    ],
-    "composantes": 1
-  },
-  {
-    "id": "G_MG996R_jeu_0p35",
-    "designation": "Gabarit MG996R, jeu 0.35 mm par côté",
-    "groupe": "gabarits",
-    "couleur": "white",
-    "volume_cm3": 3.09,
-    "masse_pleine_PLA_g": 3.83,
-    "dimensions_impression_mm": [
-      61.0,
-      30.0,
-      3.4
-    ],
-    "ferme": true,
-    "volume_positif": true,
-    "owner": "base",
-    "orientation_deg": [
-      0,
-      0,
-      0
-    ],
-    "composantes": 1
-  },
-  {
-    "id": "G_MG996R_jeu_0p5",
-    "designation": "Gabarit MG996R, jeu 0.50 mm par côté",
-    "groupe": "gabarits",
-    "couleur": "white",
-    "volume_cm3": 3.029,
-    "masse_pleine_PLA_g": 3.76,
-    "dimensions_impression_mm": [
-      61.0,
-      30.0,
-      3.4
-    ],
-    "ferme": true,
-    "volume_positif": true,
-    "owner": "base",
-    "orientation_deg": [
-      0,
-      0,
-      0
-    ],
-    "composantes": 1
-  },
-  {
     "id": "G_MG90S_jeu_0p2",
     "designation": "Gabarit MG90S, jeu 0.20 mm par côté",
     "groupe": "gabarits",
     "couleur": "white",
-    "volume_cm3": 1.564,
-    "masse_pleine_PLA_g": 1.94,
+    "volume_cm3": 1.6,
+    "masse_pleine_PLA_g": 1.98,
     "dimensions_impression_mm": [
       37.0,
       21.0,
@@ -92,8 +26,8 @@
     "designation": "Gabarit MG90S, jeu 0.35 mm par côté",
     "groupe": "gabarits",
     "couleur": "white",
-    "volume_cm3": 1.529,
-    "masse_pleine_PLA_g": 1.9,
+    "volume_cm3": 1.563,
+    "masse_pleine_PLA_g": 1.94,
     "dimensions_impression_mm": [
       37.0,
       21.0,
@@ -114,8 +48,8 @@
     "designation": "Gabarit MG90S, jeu 0.50 mm par côté",
     "groupe": "gabarits",
     "couleur": "white",
-    "volume_cm3": 1.493,
-    "masse_pleine_PLA_g": 1.85,
+    "volume_cm3": 1.526,
+    "masse_pleine_PLA_g": 1.89,
     "dimensions_impression_mm": [
       37.0,
       21.0,
@@ -132,16 +66,38 @@
     "composantes": 1
   },
   {
-    "id": "G_paliers_624_623",
-    "designation": "Gabarit logements 624ZZ et 623ZZ",
+    "id": "G_paliers_608_623",
+    "designation": "Gabarit logements 608ZZ et 623ZZ",
     "groupe": "gabarits",
-    "couleur": "dark",
-    "volume_cm3": 6.339,
-    "masse_pleine_PLA_g": 7.86,
+    "couleur": "white",
+    "volume_cm3": 8.655,
+    "masse_pleine_PLA_g": 10.73,
     "dimensions_impression_mm": [
-      50.0,
-      25.0,
-      6.2
+      56.0,
+      30.0,
+      7.2
+    ],
+    "ferme": true,
+    "volume_positif": true,
+    "owner": "base",
+    "orientation_deg": [
+      0,
+      0,
+      0
+    ],
+    "composantes": 1
+  },
+  {
+    "id": "G_palonnier_base_MG90S",
+    "designation": "Gabarit palonnier MG90S pour entraîneur de base",
+    "groupe": "gabarits",
+    "couleur": "white",
+    "volume_cm3": 1.494,
+    "masse_pleine_PLA_g": 1.85,
+    "dimensions_impression_mm": [
+      26.0,
+      26.0,
+      3.0
     ],
     "ferme": true,
     "volume_positif": true,
@@ -158,12 +114,12 @@
     "designation": "Socle fixe et berceau du moteur de base",
     "groupe": "structure",
     "couleur": "white",
-    "volume_cm3": 120.439,
-    "masse_pleine_PLA_g": 149.34,
+    "volume_cm3": 91.966,
+    "masse_pleine_PLA_g": 114.04,
     "dimensions_impression_mm": [
       116.0,
       116.0,
-      56.0
+      40.0
     ],
     "ferme": true,
     "volume_positif": true,
@@ -202,16 +158,16 @@
     "designation": "Entraîneur à méplats, écrou M4 et palonnier",
     "groupe": "structure",
     "couleur": "dark",
-    "volume_cm3": 4.926,
-    "masse_pleine_PLA_g": 6.11,
+    "volume_cm3": 3.09,
+    "masse_pleine_PLA_g": 3.83,
     "dimensions_impression_mm": [
-      34.0,
-      34.0,
+      26.0,
+      26.0,
       24.0
     ],
     "ferme": true,
     "volume_positif": true,
-    "owner": "base",
+    "owner": "yaw",
     "orientation_deg": [
       0,
       0,
@@ -223,13 +179,13 @@
     "id": "S04_tourelle_epaule",
     "designation": "Tourelle et berceau de l’épaule",
     "groupe": "structure",
-    "couleur": "dark",
-    "volume_cm3": 43.092,
-    "masse_pleine_PLA_g": 53.43,
+    "couleur": "white",
+    "volume_cm3": 31.27,
+    "masse_pleine_PLA_g": 38.77,
     "dimensions_impression_mm": [
       68.0,
-      73.5,
-      85.5
+      52.7,
+      68.0
     ],
     "ferme": true,
     "volume_positif": true,
@@ -245,13 +201,13 @@
     "id": "S05_bras",
     "designation": "Bras supérieur avec berceau du coude",
     "groupe": "structure",
-    "couleur": "dark",
-    "volume_cm3": 36.571,
-    "masse_pleine_PLA_g": 45.35,
+    "couleur": "white",
+    "volume_cm3": 18.005,
+    "masse_pleine_PLA_g": 22.33,
     "dimensions_impression_mm": [
-      32.7,
-      129.45,
-      85.5
+      28.2,
+      83.3,
+      61.5
     ],
     "ferme": true,
     "volume_positif": true,
@@ -267,12 +223,12 @@
     "id": "S06_avant_bras",
     "designation": "Avant-bras avec berceau du poignet",
     "groupe": "structure",
-    "couleur": "dark",
-    "volume_cm3": 24.231,
-    "masse_pleine_PLA_g": 30.05,
+    "couleur": "white",
+    "volume_cm3": 16.311,
+    "masse_pleine_PLA_g": 20.23,
     "dimensions_impression_mm": [
-      32.7,
-      103.8,
+      28.2,
+      73.3,
       61.5
     ],
     "ferme": true,
@@ -289,9 +245,9 @@
     "id": "S07_poignet_inclinaison",
     "designation": "Fourche du poignet et berceau de rotation",
     "groupe": "structure",
-    "couleur": "dark",
-    "volume_cm3": 5.622,
-    "masse_pleine_PLA_g": 6.97,
+    "couleur": "white",
+    "volume_cm3": 6.03,
+    "masse_pleine_PLA_g": 7.48,
     "dimensions_impression_mm": [
       37.0,
       38.5,
@@ -311,9 +267,9 @@
     "id": "S08_poignet_rotation_pince",
     "designation": "Plateau de rotation et support de pince",
     "groupe": "structure",
-    "couleur": "dark",
-    "volume_cm3": 13.161,
-    "masse_pleine_PLA_g": 16.32,
+    "couleur": "white",
+    "volume_cm3": 11.256,
+    "masse_pleine_PLA_g": 13.96,
     "dimensions_impression_mm": [
       43.0,
       37.0,
@@ -333,7 +289,7 @@
     "id": "S09_doigt_menant",
     "designation": "Doigt menant avec roue dentée",
     "groupe": "structure",
-    "couleur": "dark",
+    "couleur": "white",
     "volume_cm3": 1.524,
     "masse_pleine_PLA_g": 1.89,
     "dimensions_impression_mm": [
@@ -355,7 +311,7 @@
     "id": "S10_doigt_mene",
     "designation": "Doigt entraîné avec roue dentée",
     "groupe": "structure",
-    "couleur": "dark",
+    "couleur": "white",
     "volume_cm3": 1.619,
     "masse_pleine_PLA_g": 2.01,
     "dimensions_impression_mm": [
@@ -435,402 +391,6 @@
     "orientation_deg": [
       90,
       0,
-      0
-    ],
-    "composantes": 1
-  },
-  {
-    "id": "C01_avant",
-    "designation": "Demi-coque bras avant",
-    "groupe": "coques",
-    "couleur": "white",
-    "volume_cm3": 6.764,
-    "masse_pleine_PLA_g": 8.39,
-    "dimensions_impression_mm": [
-      46.0,
-      56.0,
-      23.0
-    ],
-    "ferme": true,
-    "volume_positif": true,
-    "owner": "upper",
-    "orientation_deg": [
-      90,
-      0,
-      0
-    ],
-    "composantes": 1
-  },
-  {
-    "id": "C01_arriere",
-    "designation": "Demi-coque bras arriere",
-    "groupe": "coques",
-    "couleur": "white",
-    "volume_cm3": 7.612,
-    "masse_pleine_PLA_g": 9.44,
-    "dimensions_impression_mm": [
-      46.0,
-      56.0,
-      23.0
-    ],
-    "ferme": true,
-    "volume_positif": true,
-    "owner": "upper",
-    "orientation_deg": [
-      -90,
-      0,
-      0
-    ],
-    "composantes": 1
-  },
-  {
-    "id": "C02_avant",
-    "designation": "Demi-coque avant-bras avant",
-    "groupe": "coques",
-    "couleur": "white",
-    "volume_cm3": 5.19,
-    "masse_pleine_PLA_g": 6.44,
-    "dimensions_impression_mm": [
-      46.0,
-      38.0,
-      23.0
-    ],
-    "ferme": true,
-    "volume_positif": true,
-    "owner": "forearm",
-    "orientation_deg": [
-      90,
-      0,
-      0
-    ],
-    "composantes": 1
-  },
-  {
-    "id": "C02_arriere",
-    "designation": "Demi-coque avant-bras arriere",
-    "groupe": "coques",
-    "couleur": "white",
-    "volume_cm3": 5.087,
-    "masse_pleine_PLA_g": 6.31,
-    "dimensions_impression_mm": [
-      46.0,
-      38.0,
-      23.0
-    ],
-    "ferme": true,
-    "volume_positif": true,
-    "owner": "forearm",
-    "orientation_deg": [
-      -90,
-      0,
-      0
-    ],
-    "composantes": 1
-  },
-  {
-    "id": "C03_gauche",
-    "designation": "Demi-coque épaule gauche",
-    "groupe": "coques",
-    "couleur": "white",
-    "volume_cm3": 13.622,
-    "masse_pleine_PLA_g": 16.89,
-    "dimensions_impression_mm": [
-      69.0,
-      45.0,
-      34.0
-    ],
-    "ferme": true,
-    "volume_positif": true,
-    "owner": "yaw",
-    "orientation_deg": [
-      0,
-      -90,
-      0
-    ],
-    "composantes": 1
-  },
-  {
-    "id": "C03_droite",
-    "designation": "Demi-coque épaule droite",
-    "groupe": "coques",
-    "couleur": "white",
-    "volume_cm3": 13.581,
-    "masse_pleine_PLA_g": 16.84,
-    "dimensions_impression_mm": [
-      69.0,
-      45.0,
-      34.0
-    ],
-    "ferme": true,
-    "volume_positif": true,
-    "owner": "yaw",
-    "orientation_deg": [
-      0,
-      90,
-      0
-    ],
-    "composantes": 1
-  },
-  {
-    "id": "C04_gauche",
-    "designation": "Demi-coque coude gauche",
-    "groupe": "coques",
-    "couleur": "white",
-    "volume_cm3": 16.773,
-    "masse_pleine_PLA_g": 20.8,
-    "dimensions_impression_mm": [
-      81.0,
-      45.0,
-      34.0
-    ],
-    "ferme": true,
-    "volume_positif": true,
-    "owner": "upper",
-    "orientation_deg": [
-      0,
-      -90,
-      0
-    ],
-    "composantes": 1
-  },
-  {
-    "id": "C04_droite",
-    "designation": "Demi-coque coude droite",
-    "groupe": "coques",
-    "couleur": "white",
-    "volume_cm3": 16.732,
-    "masse_pleine_PLA_g": 20.75,
-    "dimensions_impression_mm": [
-      81.0,
-      45.0,
-      34.0
-    ],
-    "ferme": true,
-    "volume_positif": true,
-    "owner": "upper",
-    "orientation_deg": [
-      0,
-      90,
-      0
-    ],
-    "composantes": 1
-  },
-  {
-    "id": "C05_gauche",
-    "designation": "Demi-coque poignet gauche",
-    "groupe": "coques",
-    "couleur": "white",
-    "volume_cm3": 2.6,
-    "masse_pleine_PLA_g": 3.22,
-    "dimensions_impression_mm": [
-      39.95,
-      21.29,
-      18.0
-    ],
-    "ferme": true,
-    "volume_positif": true,
-    "owner": "wrist",
-    "orientation_deg": [
-      0,
-      -90,
-      0
-    ],
-    "composantes": 1
-  },
-  {
-    "id": "C05_droite",
-    "designation": "Demi-coque poignet droite",
-    "groupe": "coques",
-    "couleur": "white",
-    "volume_cm3": 3.532,
-    "masse_pleine_PLA_g": 4.38,
-    "dimensions_impression_mm": [
-      39.95,
-      21.29,
-      29.0
-    ],
-    "ferme": true,
-    "volume_positif": true,
-    "owner": "wrist",
-    "orientation_deg": [
-      0,
-      90,
-      0
-    ],
-    "composantes": 1
-  },
-  {
-    "id": "C06_gauche",
-    "designation": "Demi-coque pince gauche",
-    "groupe": "coques",
-    "couleur": "white",
-    "volume_cm3": 3.276,
-    "masse_pleine_PLA_g": 4.06,
-    "dimensions_impression_mm": [
-      27.66,
-      38.2,
-      24.0
-    ],
-    "ferme": true,
-    "volume_positif": true,
-    "owner": "roll",
-    "orientation_deg": [
-      0,
-      -90,
-      0
-    ],
-    "composantes": 1
-  },
-  {
-    "id": "C06_droite",
-    "designation": "Demi-coque pince droite",
-    "groupe": "coques",
-    "couleur": "white",
-    "volume_cm3": 2.885,
-    "masse_pleine_PLA_g": 3.58,
-    "dimensions_impression_mm": [
-      27.66,
-      38.2,
-      24.0
-    ],
-    "ferme": true,
-    "volume_positif": true,
-    "owner": "roll",
-    "orientation_deg": [
-      0,
-      90,
-      0
-    ],
-    "composantes": 1
-  },
-  {
-    "id": "C07_cache_rond",
-    "designation": "Cache circulaire épaule",
-    "groupe": "coques",
-    "couleur": "white",
-    "volume_cm3": 8.21,
-    "masse_pleine_PLA_g": 10.18,
-    "dimensions_impression_mm": [
-      52.0,
-      52.0,
-      4.15
-    ],
-    "ferme": true,
-    "volume_positif": true,
-    "owner": "yaw",
-    "orientation_deg": [
-      90,
-      0,
-      0
-    ],
-    "composantes": 1
-  },
-  {
-    "id": "C07_bague",
-    "designation": "Bague sombre épaule",
-    "groupe": "coques",
-    "couleur": "dark",
-    "volume_cm3": 1.417,
-    "masse_pleine_PLA_g": 1.76,
-    "dimensions_impression_mm": [
-      58.0,
-      58.0,
-      2.0
-    ],
-    "ferme": true,
-    "volume_positif": true,
-    "owner": "yaw",
-    "orientation_deg": [
-      90,
-      0,
-      0
-    ],
-    "composantes": 1
-  },
-  {
-    "id": "C08_cache_rond",
-    "designation": "Cache circulaire coude",
-    "groupe": "coques",
-    "couleur": "white",
-    "volume_cm3": 8.21,
-    "masse_pleine_PLA_g": 10.18,
-    "dimensions_impression_mm": [
-      52.0,
-      52.0,
-      4.15
-    ],
-    "ferme": true,
-    "volume_positif": true,
-    "owner": "upper",
-    "orientation_deg": [
-      90,
-      0,
-      0
-    ],
-    "composantes": 1
-  },
-  {
-    "id": "C08_bague",
-    "designation": "Bague sombre coude",
-    "groupe": "coques",
-    "couleur": "dark",
-    "volume_cm3": 1.417,
-    "masse_pleine_PLA_g": 1.76,
-    "dimensions_impression_mm": [
-      58.0,
-      58.0,
-      2.0
-    ],
-    "ferme": true,
-    "volume_positif": true,
-    "owner": "upper",
-    "orientation_deg": [
-      90,
-      0,
-      0
-    ],
-    "composantes": 1
-  },
-  {
-    "id": "C09_articulation_poignet_gauche",
-    "designation": "Demi-coque articulation du poignet gauche",
-    "groupe": "coques",
-    "couleur": "white",
-    "volume_cm3": 6.032,
-    "masse_pleine_PLA_g": 7.48,
-    "dimensions_impression_mm": [
-      46.0,
-      33.6,
-      22.0
-    ],
-    "ferme": true,
-    "volume_positif": true,
-    "owner": "forearm",
-    "orientation_deg": [
-      0,
-      -90,
-      0
-    ],
-    "composantes": 1
-  },
-  {
-    "id": "C09_articulation_poignet_droite",
-    "designation": "Demi-coque articulation du poignet droite",
-    "groupe": "coques",
-    "couleur": "white",
-    "volume_cm3": 5.99,
-    "masse_pleine_PLA_g": 7.43,
-    "dimensions_impression_mm": [
-      46.0,
-      33.6,
-      22.0
-    ],
-    "ferme": true,
-    "volume_positif": true,
-    "owner": "forearm",
-    "orientation_deg": [
-      0,
-      90,
       0
     ],
     "composantes": 1

@@ -1,0 +1,309 @@
+{
+  "revision": "0.3",
+  "seuil_mm3": 0.5,
+  "statut": "Échantillons géométriques de poses, pas une validation de trajectoires ou de mouvements réels.",
+  "limites": "Pièces imprimées et corps nominaux des six servos. Vis, palonniers, fils et effets de tolérances non modélisés. Les positions sont relatives aux repères CAO, pas des consignes Arduino.",
+  "poses": [
+    {
+      "pose": "pose_essai",
+      "angles_deg": [
+        0,
+        10,
+        45,
+        85,
+        0,
+        12
+      ],
+      "interferences": []
+    },
+    {
+      "pose": "axe_1_-5_deg",
+      "angles_deg": [
+        -5,
+        10,
+        45,
+        85,
+        0,
+        12
+      ],
+      "interferences": []
+    },
+    {
+      "pose": "axe_1_+5_deg",
+      "angles_deg": [
+        5,
+        10,
+        45,
+        85,
+        0,
+        12
+      ],
+      "interferences": []
+    },
+    {
+      "pose": "axe_1_-10_deg",
+      "angles_deg": [
+        -10,
+        10,
+        45,
+        85,
+        0,
+        12
+      ],
+      "interferences": []
+    },
+    {
+      "pose": "axe_1_+10_deg",
+      "angles_deg": [
+        10,
+        10,
+        45,
+        85,
+        0,
+        12
+      ],
+      "interferences": []
+    },
+    {
+      "pose": "axe_2_-5_deg",
+      "angles_deg": [
+        0,
+        5,
+        45,
+        85,
+        0,
+        12
+      ],
+      "interferences": []
+    },
+    {
+      "pose": "axe_2_+5_deg",
+      "angles_deg": [
+        0,
+        15,
+        45,
+        85,
+        0,
+        12
+      ],
+      "interferences": []
+    },
+    {
+      "pose": "axe_2_-10_deg",
+      "angles_deg": [
+        0,
+        0,
+        45,
+        85,
+        0,
+        12
+      ],
+      "interferences": []
+    },
+    {
+      "pose": "axe_2_+10_deg",
+      "angles_deg": [
+        0,
+        20,
+        45,
+        85,
+        0,
+        12
+      ],
+      "interferences": []
+    },
+    {
+      "pose": "axe_3_-5_deg",
+      "angles_deg": [
+        0,
+        10,
+        40,
+        85,
+        0,
+        12
+      ],
+      "interferences": []
+    },
+    {
+      "pose": "axe_3_+5_deg",
+      "angles_deg": [
+        0,
+        10,
+        50,
+        85,
+        0,
+        12
+      ],
+      "interferences": []
+    },
+    {
+      "pose": "axe_3_-10_deg",
+      "angles_deg": [
+        0,
+        10,
+        35,
+        85,
+        0,
+        12
+      ],
+      "interferences": []
+    },
+    {
+      "pose": "axe_3_+10_deg",
+      "angles_deg": [
+        0,
+        10,
+        55,
+        85,
+        0,
+        12
+      ],
+      "interferences": []
+    },
+    {
+      "pose": "axe_4_-5_deg",
+      "angles_deg": [
+        0,
+        10,
+        45,
+        80,
+        0,
+        12
+      ],
+      "interferences": []
+    },
+    {
+      "pose": "axe_4_+5_deg",
+      "angles_deg": [
+        0,
+        10,
+        45,
+        90,
+        0,
+        12
+      ],
+      "interferences": []
+    },
+    {
+      "pose": "axe_4_-10_deg",
+      "angles_deg": [
+        0,
+        10,
+        45,
+        75,
+        0,
+        12
+      ],
+      "interferences": []
+    },
+    {
+      "pose": "axe_4_+10_deg",
+      "angles_deg": [
+        0,
+        10,
+        45,
+        95,
+        0,
+        12
+      ],
+      "interferences": []
+    },
+    {
+      "pose": "axe_5_-5_deg",
+      "angles_deg": [
+        0,
+        10,
+        45,
+        85,
+        -5,
+        12
+      ],
+      "interferences": []
+    },
+    {
+      "pose": "axe_5_+5_deg",
+      "angles_deg": [
+        0,
+        10,
+        45,
+        85,
+        5,
+        12
+      ],
+      "interferences": []
+    },
+    {
+      "pose": "axe_5_-10_deg",
+      "angles_deg": [
+        0,
+        10,
+        45,
+        85,
+        -10,
+        12
+      ],
+      "interferences": []
+    },
+    {
+      "pose": "axe_5_+10_deg",
+      "angles_deg": [
+        0,
+        10,
+        45,
+        85,
+        10,
+        12
+      ],
+      "interferences": []
+    },
+    {
+      "pose": "axe_6_-5_deg",
+      "angles_deg": [
+        0,
+        10,
+        45,
+        85,
+        0,
+        7
+      ],
+      "interferences": []
+    },
+    {
+      "pose": "axe_6_+5_deg",
+      "angles_deg": [
+        0,
+        10,
+        45,
+        85,
+        0,
+        17
+      ],
+      "interferences": []
+    },
+    {
+      "pose": "axe_6_-10_deg",
+      "angles_deg": [
+        0,
+        10,
+        45,
+        85,
+        0,
+        2
+      ],
+      "interferences": []
+    },
+    {
+      "pose": "axe_6_+10_deg",
+      "angles_deg": [
+        0,
+        10,
+        45,
+        85,
+        0,
+        22
+      ],
+      "interferences": []
+    }
+  ],
+  "poses_avec_interference": []
+}

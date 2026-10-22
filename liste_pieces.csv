@@ -1,39 +1,19 @@
 ﻿Identifiant;Désignation;Groupe;Couleur indicative;X impression mm;Y impression mm;Z impression mm;Volume matière pleine cm3
-G_MG996R_jeu_0p2;Gabarit MG996R, jeu 0.20 mm par côté;gabarits;white;61.0;30.0;3.4;3.152
-G_MG996R_jeu_0p35;Gabarit MG996R, jeu 0.35 mm par côté;gabarits;white;61.0;30.0;3.4;3.09
-G_MG996R_jeu_0p5;Gabarit MG996R, jeu 0.50 mm par côté;gabarits;white;61.0;30.0;3.4;3.029
-G_MG90S_jeu_0p2;Gabarit MG90S, jeu 0.20 mm par côté;gabarits;white;37.0;21.0;3.4;1.564
-G_MG90S_jeu_0p35;Gabarit MG90S, jeu 0.35 mm par côté;gabarits;white;37.0;21.0;3.4;1.529
-G_MG90S_jeu_0p5;Gabarit MG90S, jeu 0.50 mm par côté;gabarits;white;37.0;21.0;3.4;1.493
-G_paliers_624_623;Gabarit logements 624ZZ et 623ZZ;gabarits;dark;50.0;25.0;6.2;6.339
-S01_socle;Socle fixe et berceau du moteur de base;structure;white;116.0;116.0;56.0;120.439
+G_MG90S_jeu_0p2;Gabarit MG90S, jeu 0.20 mm par côté;gabarits;white;37.0;21.0;3.4;1.6
+G_MG90S_jeu_0p35;Gabarit MG90S, jeu 0.35 mm par côté;gabarits;white;37.0;21.0;3.4;1.563
+G_MG90S_jeu_0p5;Gabarit MG90S, jeu 0.50 mm par côté;gabarits;white;37.0;21.0;3.4;1.526
+G_paliers_608_623;Gabarit logements 608ZZ et 623ZZ;gabarits;white;56.0;30.0;7.2;8.655
+G_palonnier_base_MG90S;Gabarit palonnier MG90S pour entraîneur de base;gabarits;white;26.0;26.0;3.0;1.494
+S01_socle;Socle fixe et berceau du moteur de base;structure;white;116.0;116.0;40.0;91.966
 S02_support_palier_base;Support démontable du roulement 608ZZ;structure;dark;100.0;100.0;11.0;31.991
-S03_entraineur_base;Entraîneur à méplats, écrou M4 et palonnier;structure;dark;34.0;34.0;24.0;4.926
-S04_tourelle_epaule;Tourelle et berceau de l’épaule;structure;dark;68.0;73.5;85.5;43.092
-S05_bras;Bras supérieur avec berceau du coude;structure;dark;32.7;129.45;85.5;36.571
-S06_avant_bras;Avant-bras avec berceau du poignet;structure;dark;32.7;103.8;61.5;24.231
-S07_poignet_inclinaison;Fourche du poignet et berceau de rotation;structure;dark;37.0;38.5;16.7;5.622
-S08_poignet_rotation_pince;Plateau de rotation et support de pince;structure;dark;43.0;37.0;44.5;13.161
-S09_doigt_menant;Doigt menant avec roue dentée;structure;dark;19.99;44.39;6.0;1.524
-S10_doigt_mene;Doigt entraîné avec roue dentée;structure;dark;19.78;44.5;6.0;1.619
+S03_entraineur_base;Entraîneur à méplats, écrou M4 et palonnier;structure;dark;26.0;26.0;24.0;3.09
+S04_tourelle_epaule;Tourelle et berceau de l’épaule;structure;white;68.0;52.7;68.0;31.27
+S05_bras;Bras supérieur avec berceau du coude;structure;white;28.2;83.3;61.5;18.005
+S06_avant_bras;Avant-bras avec berceau du poignet;structure;white;28.2;73.3;61.5;16.311
+S07_poignet_inclinaison;Fourche du poignet et berceau de rotation;structure;white;37.0;38.5;16.7;6.03
+S08_poignet_rotation_pince;Plateau de rotation et support de pince;structure;white;43.0;37.0;44.5;11.256
+S09_doigt_menant;Doigt menant avec roue dentée;structure;white;19.99;44.39;6.0;1.524
+S10_doigt_mene;Doigt entraîné avec roue dentée;structure;white;19.78;44.5;6.0;1.619
 S11_boitier_electronique;Boîtier fixe inférieur et pattes de fixation;structure;white;166.0;166.0;40.0;73.647
 S12_fond_electronique;Fond démontable avec supports Uno et passages de colliers;structure;dark;140.0;140.0;9.0;46.822
 S13_platine_arriere;Platine amovible pour câble et futur interrupteur;structure;dark;42.0;25.0;2.4;2.33
-C01_avant;Demi-coque bras avant;coques;white;46.0;56.0;23.0;6.764
-C01_arriere;Demi-coque bras arriere;coques;white;46.0;56.0;23.0;7.612
-C02_avant;Demi-coque avant-bras avant;coques;white;46.0;38.0;23.0;5.19
-C02_arriere;Demi-coque avant-bras arriere;coques;white;46.0;38.0;23.0;5.087
-C03_gauche;Demi-coque épaule gauche;coques;white;69.0;45.0;34.0;13.622
-C03_droite;Demi-coque épaule droite;coques;white;69.0;45.0;34.0;13.581
-C04_gauche;Demi-coque coude gauche;coques;white;81.0;45.0;34.0;16.773
-C04_droite;Demi-coque coude droite;coques;white;81.0;45.0;34.0;16.732
-C05_gauche;Demi-coque poignet gauche;coques;white;39.95;21.29;18.0;2.6
-C05_droite;Demi-coque poignet droite;coques;white;39.95;21.29;29.0;3.532
-C06_gauche;Demi-coque pince gauche;coques;white;27.66;38.2;24.0;3.276
-C06_droite;Demi-coque pince droite;coques;white;27.66;38.2;24.0;2.885
-C07_cache_rond;Cache circulaire épaule;coques;white;52.0;52.0;4.15;8.21
-C07_bague;Bague sombre épaule;coques;dark;58.0;58.0;2.0;1.417
-C08_cache_rond;Cache circulaire coude;coques;white;52.0;52.0;4.15;8.21
-C08_bague;Bague sombre coude;coques;dark;58.0;58.0;2.0;1.417
-C09_articulation_poignet_gauche;Demi-coque articulation du poignet gauche;coques;white;46.0;33.6;22.0;6.032
-C09_articulation_poignet_droite;Demi-coque articulation du poignet droite;coques;white;46.0;33.6;22.0;5.99

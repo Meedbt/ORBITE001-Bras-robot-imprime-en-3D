@@ -1,5 +1,5 @@
 {
-  "revision": "0.2",
+  "revision": "0.3",
   "limites": "Vérification géométrique sur enveloppes nominales simplifiées, sans fils, vis ni tolérances d’impression. Fond retiré après débranchement USB et libération des câbles. Échantillonnage discret des déplacements, pas une validation physique.",
   "extraction_fond": [
     {

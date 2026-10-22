@@ -1,0 +1,414 @@
+{
+  "revision": "0.3",
+  "statut": "Contrôle discret du passage des corps nominaux et oreilles de servos, sans palonniers ni fils.",
+  "limites": "Un seul support est contrôlé à la fois ; installer les servos avant les palonniers et avant de fermer les sous-ensembles. Têtes de vis, dimensions réelles et tolérances à vérifier. Les sondes de matière ne sont pas un calcul de résistance.",
+  "anomalies": [],
+  "anomalies_appuis_vis": [],
+  "fraction_matiere_sonde_renfort_S07": 1.0,
+  "appuis_vis": [
+    {
+      "moteur": "M1",
+      "cote_oreille": -1,
+      "y_servo_mm": -2.6,
+      "fraction_matiere_autour_vis": 1.0
+    },
+    {
+      "moteur": "M1",
+      "cote_oreille": -1,
+      "y_servo_mm": 2.6,
+      "fraction_matiere_autour_vis": 1.0
+    },
+    {
+      "moteur": "M1",
+      "cote_oreille": 1,
+      "y_servo_mm": -2.6,
+      "fraction_matiere_autour_vis": 1.0
+    },
+    {
+      "moteur": "M1",
+      "cote_oreille": 1,
+      "y_servo_mm": 2.6,
+      "fraction_matiere_autour_vis": 1.0
+    },
+    {
+      "moteur": "M2",
+      "cote_oreille": -1,
+      "y_servo_mm": -2.6,
+      "fraction_matiere_autour_vis": 1.0
+    },
+    {
+      "moteur": "M2",
+      "cote_oreille": -1,
+      "y_servo_mm": 2.6,
+      "fraction_matiere_autour_vis": 1.0
+    },
+    {
+      "moteur": "M2",
+      "cote_oreille": 1,
+      "y_servo_mm": -2.6,
+      "fraction_matiere_autour_vis": 1.0
+    },
+    {
+      "moteur": "M2",
+      "cote_oreille": 1,
+      "y_servo_mm": 2.6,
+      "fraction_matiere_autour_vis": 1.0
+    },
+    {
+      "moteur": "M3",
+      "cote_oreille": -1,
+      "y_servo_mm": -2.6,
+      "fraction_matiere_autour_vis": 1.0
+    },
+    {
+      "moteur": "M3",
+      "cote_oreille": -1,
+      "y_servo_mm": 2.6,
+      "fraction_matiere_autour_vis": 1.0
+    },
+    {
+      "moteur": "M3",
+      "cote_oreille": 1,
+      "y_servo_mm": -2.6,
+      "fraction_matiere_autour_vis": 1.0
+    },
+    {
+      "moteur": "M3",
+      "cote_oreille": 1,
+      "y_servo_mm": 2.6,
+      "fraction_matiere_autour_vis": 1.0
+    },
+    {
+      "moteur": "M4",
+      "cote_oreille": -1,
+      "y_servo_mm": -2.6,
+      "fraction_matiere_autour_vis": 1.0
+    },
+    {
+      "moteur": "M4",
+      "cote_oreille": -1,
+      "y_servo_mm": 2.6,
+      "fraction_matiere_autour_vis": 1.0
+    },
+    {
+      "moteur": "M4",
+      "cote_oreille": 1,
+      "y_servo_mm": -2.6,
+      "fraction_matiere_autour_vis": 1.0
+    },
+    {
+      "moteur": "M4",
+      "cote_oreille": 1,
+      "y_servo_mm": 2.6,
+      "fraction_matiere_autour_vis": 1.0
+    },
+    {
+      "moteur": "M5",
+      "cote_oreille": -1,
+      "y_servo_mm": -2.6,
+      "fraction_matiere_autour_vis": 1.0
+    },
+    {
+      "moteur": "M5",
+      "cote_oreille": -1,
+      "y_servo_mm": 2.6,
+      "fraction_matiere_autour_vis": 1.0
+    },
+    {
+      "moteur": "M5",
+      "cote_oreille": 1,
+      "y_servo_mm": -2.6,
+      "fraction_matiere_autour_vis": 1.0
+    },
+    {
+      "moteur": "M5",
+      "cote_oreille": 1,
+      "y_servo_mm": 2.6,
+      "fraction_matiere_autour_vis": 1.0
+    },
+    {
+      "moteur": "M6",
+      "cote_oreille": -1,
+      "y_servo_mm": -2.6,
+      "fraction_matiere_autour_vis": 1.0
+    },
+    {
+      "moteur": "M6",
+      "cote_oreille": -1,
+      "y_servo_mm": 2.6,
+      "fraction_matiere_autour_vis": 1.0
+    },
+    {
+      "moteur": "M6",
+      "cote_oreille": 1,
+      "y_servo_mm": -2.6,
+      "fraction_matiere_autour_vis": 1.0
+    },
+    {
+      "moteur": "M6",
+      "cote_oreille": 1,
+      "y_servo_mm": 2.6,
+      "fraction_matiere_autour_vis": 1.0
+    }
+  ],
+  "supports": [
+    {
+      "moteur": "M1",
+      "piece": "S01_socle",
+      "direction_locale_piece": [
+        0,
+        0,
+        1
+      ],
+      "etapes": [
+        {
+          "distance_mm": 0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 1,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 10,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 20,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 30,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 40,
+          "intersection_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "moteur": "M2",
+      "piece": "S04_tourelle_epaule",
+      "direction_locale_piece": [
+        1,
+        0,
+        0
+      ],
+      "etapes": [
+        {
+          "distance_mm": 0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 1,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 10,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 20,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 30,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 40,
+          "intersection_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "moteur": "M3",
+      "piece": "S05_bras",
+      "direction_locale_piece": [
+        1,
+        0,
+        0
+      ],
+      "etapes": [
+        {
+          "distance_mm": 0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 1,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 10,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 20,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 30,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 40,
+          "intersection_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "moteur": "M4",
+      "piece": "S06_avant_bras",
+      "direction_locale_piece": [
+        1,
+        0,
+        0
+      ],
+      "etapes": [
+        {
+          "distance_mm": 0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 1,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 10,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 20,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 30,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 40,
+          "intersection_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "moteur": "M5",
+      "piece": "S07_poignet_inclinaison",
+      "direction_locale_piece": [
+        0,
+        1,
+        0
+      ],
+      "etapes": [
+        {
+          "distance_mm": 0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 1,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 10,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 20,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 30,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 40,
+          "intersection_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "moteur": "M6",
+      "piece": "S08_poignet_rotation_pince",
+      "direction_locale_piece": [
+        -1,
+        0,
+        0
+      ],
+      "etapes": [
+        {
+          "distance_mm": 0,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 1,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 3,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 5,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 10,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 20,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 30,
+          "intersection_mm3": 0.0
+        },
+        {
+          "distance_mm": 40,
+          "intersection_mm3": 0.0
+        }
+      ]
+    }
+  ]
+}
