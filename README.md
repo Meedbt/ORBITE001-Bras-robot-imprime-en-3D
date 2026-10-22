@@ -28,4 +28,4 @@ Le pack contient **18 STL : 5 gabarits et 13 pièces de structure**, dont le com
 - [`apercu_3d.html`](apercu_3d.html) : aperçu interactif ; le bouton **Socle ouvert** montre l’implantation électronique.
 - [`LIRE_AVANT_IMPRESSION.md`](LIRE_AVANT_IMPRESSION.md) : guide d’impression, de montage et de premiers essais.
 
-**Première étape :** imprimer les deux gabarits de [`gabarits_depart_A1_mini.3mf`](gabarits_depart_A1_mini.3mf), puis vérifier un MG90S réel et son palonnier avant d’imprimer l’armature.
+
