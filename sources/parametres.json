@@ -1,5 +1,6 @@
 {
-  "version": "0.2",
+  "version": "0.3",
+  "variante": "MICRO TEST — 6 MG90S, sans coques et sans charge",
   "statut": "PROTOTYPE — NON VALIDE SUR MATERIEL",
   "imprimante": "Bambu Lab A1 mini",
   "plateau_mm": [
@@ -7,40 +8,17 @@
     180,
     180
   ],
-  "L1_mm": 94.0,
-  "L2_mm": 76.0,
+  "L1_mm": 60.0,
+  "L2_mm": 50.0,
   "axes": {
-    "base": "MG996R",
-    "epaule": "MG996R",
-    "coude": "MG996R",
+    "base": "MG90S",
+    "epaule": "MG90S",
+    "coude": "MG90S",
     "poignet_inclinaison": "MG90S",
     "poignet_rotation": "MG90S",
     "pince": "MG90S"
   },
   "servos_nominales": {
-    "MG996R": {
-      "name": "MG996R",
-      "l": 40.7,
-      "w": 19.7,
-      "depth": 36.8,
-      "off": 10.3,
-      "front": 8.0,
-      "ear": 47.5,
-      "ear_y": 5,
-      "mount_d": 3.3,
-      "plate": [
-        61,
-        30
-      ],
-      "plate_z": -13,
-      "back": -47,
-      "side_y": 32,
-      "br": 6.5,
-      "bore": 4.25,
-      "foot": -38,
-      "rise": 31,
-      "mass": 55
-    },
     "MG90S": {
       "name": "MG90S",
       "l": 22.8,
@@ -65,8 +43,21 @@
       "mass": 13.4
     }
   },
-  "charge_etudiee_g": 20.0,
-  "coques_epaisseur_mm": 2.2,
+  "charge_etudiee_g": 0.0,
+  "coques_decoratives": false,
+  "hauteur_pivot_epaule_mm": 84.0,
+  "hauteur_axe_base_mm": 35.0,
+  "ROLL_Z_mm": 35.0,
+  "ROLL_Y_mm": 14.0,
+  "PINCH_Z_mm": 23.0,
+  "pose_presentation_deg": [
+    0,
+    10,
+    45,
+    85,
+    0,
+    12
+  ],
   "socle_electronique": {
     "diametre_corps_mm": 140,
     "hauteur_ajoutee_mm": 40.0,
@@ -104,6 +95,5 @@
     "references_electroniques": "ENVELOPPES NOMINALES A VERIFIER AVEC COMPOSANTS ACHETES"
   },
   "reference_servo_vendeur": "A CONFIRMER",
-  "fixation_coques": "A FINALISER APRES ESSAI ARMATURE",
   "compensation_epaule": "ANCRAGES PREVUS, RESSORT A DIMENSIONNER"
 }
